@@ -1,0 +1,35 @@
+{
+  "dataset_revision": "798bb599140565cca2dab8473035fa167e5ee602",
+  "evaluation_time": 0.607536792755127,
+  "kg_co2_emissions": null,
+  "mteb_version": "1.14.21",
+  "scores": {
+    "test": [
+      {
+        "accuracy": 0.02032967032967033,
+        "f1": 0.016201460435105362,
+        "hf_subset": "kat_Geor-eng_Latn",
+        "languages": [
+          "kat-Geor",
+          "eng-Latn"
+        ],
+        "main_score": 0.016201460435105362,
+        "precision": 0.015564512242143821,
+        "recall": 0.02032967032967033
+      },
+      {
+        "accuracy": 0.01978021978021978,
+        "f1": 0.011400743989068231,
+        "hf_subset": "eng_Latn-kat_Geor",
+        "languages": [
+          "eng-Latn",
+          "kat-Geor"
+        ],
+        "main_score": 0.011400743989068231,
+        "precision": 0.01084297232828621,
+        "recall": 0.01978021978021978
+      }
+    ]
+  },
+  "task_name": "TbilisiCityHallBitextMining"
+}
