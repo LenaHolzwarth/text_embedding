@@ -1,8 +1,24 @@
 from sklearn.feature_extraction.text import TfidfVectorizer
 from typing import Any
+import torch
+import numpy as np
+
+class ModelCard():
+    def __init__(self, name: str, revision: str):
+        self.model_name = name
+        self.language = "any"
+        self.base_model_revision = revision
+
 
 # tf-idf class in MTEB syntax
 class Tfidf():
+
+    def __init__(self):
+        self.model_card_data = ModelCard(name = "Tfidf", revision = "0.1")
+        self.similarity_fn_name = "" #cosine is the default
+        
+    
+
     def encode(self, sentences: list[str], **kwargs: Any
     ) -> torch.Tensor | np.ndarray:
         """Encodes the given sentences using the encoder.
@@ -20,5 +36,7 @@ class Tfidf():
         sent_vec = vectorizer.fit_transform(sentences)
         # transform sparse matrix to numpy array
         sent_np = sent_vec.toarray()
+        # transform numpy array to tensor
+        #sent_np = torch.from_numpy(sent_np)
 
         return sent_np
