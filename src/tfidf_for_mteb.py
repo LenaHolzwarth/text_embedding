@@ -1,4 +1,5 @@
 from sklearn.feature_extraction.text import TfidfVectorizer
+from mteb.model_meta import ModelMeta
 from typing import Any
 import torch
 import numpy as np
@@ -14,8 +15,13 @@ class ModelCard():
 class Tfidf():
 
     def __init__(self):
-        self.model_card_data = ModelCard(name = "Tfidf", revision = "0.1")
-        self.similarity_fn_name = "" #cosine is the default
+        #self.model_card_data = ModelCard(name = "Tfidf", revision = "0.1")
+        #self.similarity_fn_name = "" #cosine is the default
+        self.mteb_model_meta = ModelMeta(name = "Tfidf", 
+                                         revision = "1.0",
+                                         release_date = "2024-10-01",
+                                         languages = [])
+        
         
     
 
