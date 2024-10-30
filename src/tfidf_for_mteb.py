@@ -3,10 +3,7 @@ from typing import Any
 import torch
 import numpy as np
 import re
-#from mteb.model_meta import ModelMeta
-import sys
-sys.path.append("../..")
-from sparse_mteb.mteb.model_meta import ModelMeta
+from mteb.model_meta import ModelMeta
 
 
 # tf-idf class in MTEB syntax
