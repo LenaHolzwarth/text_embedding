@@ -21,7 +21,8 @@ logger.info("logger set up successfully")
 # dict to map model names to their SentenceTransformer names
 model_shortcuts = {"glove": "sentence-transformers/average_word_embeddings_glove.6B.300d",
                    "komninos": "average_word_embeddings_komninos",
-                   "sbert" : "sentence-transformers/all-mpnet-base-v2"}
+                   "sbert" : "sentence-transformers/all-mpnet-base-v2",
+                   "simcse_u": "princeton-nlp/unsup-simcse-bert-base-uncased"}
 
 
 # get user input
