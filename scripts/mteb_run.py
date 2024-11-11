@@ -21,8 +21,12 @@ logger.info("logger set up successfully")
 # dict to map model names to their SentenceTransformer names
 model_shortcuts = {"glove": "sentence-transformers/average_word_embeddings_glove.6B.300d",
                    "komninos": "average_word_embeddings_komninos",
+                   "mpnet": "microsoft/mpnet-base",
                    "sbert" : "sentence-transformers/all-mpnet-base-v2",
-                   "simcse_u": "princeton-nlp/unsup-simcse-bert-base-uncased"}
+                   "scincl": "malteos/scincl",
+                   "simcse_u": "princeton-nlp/unsup-simcse-bert-base-uncased",
+                   "specter": "allenai/specter",
+                   "t5xxl": "sentence-transformers/sentence-t5-xxl"}
 
 
 # get user input
@@ -42,11 +46,15 @@ elif task_type == "s":
 else:
     raise Exception(f"{task_type} is invalid task type. Must be one of 'b', 't' or 's'")
 
+# free GPU memory
+gc.collect()
+torch.cuda.empty_cache()
 
 # define the model
 if model_name in model_shortcuts:
     model_name = model_shortcuts[model_name]
 model = mteb.get_model(model_name)
+logger.info(f"evaluating model {model_name}")
 
 # run each task consecutively
 for task in tasks:
