@@ -30,6 +30,7 @@ class Tfidf():
         """
         # initialize the model
         if vocab == []:
+            print("no vocab provided, computed by sklearns TfidfVectorizer call")
             vectorizer = TfidfVectorizer()
         else: 
             vectorizer = TfidfVectorizer(vocabulary = vocab)
