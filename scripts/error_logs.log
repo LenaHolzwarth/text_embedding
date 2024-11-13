@@ -187,3 +187,18 @@
 2024-11-01 17:11:12,278 :: INFO :: ended task TwitterSemEval2015PC(name='TwitterSemEval2015', languages=['eng'])
 2024-11-01 17:11:14,408 :: INFO :: started task TwitterURLCorpusPC(name='TwitterURLCorpus', languages=['eng'])
 2024-11-01 17:12:19,503 :: INFO :: ended task TwitterURLCorpusPC(name='TwitterURLCorpus', languages=['eng'])
+2024-11-04 11:02:54,215 :: INFO :: logger set up successfully
+2024-11-04 11:15:07,519 :: INFO :: logger set up successfully
+2024-11-11 10:49:57,733 :: INFO :: logger set up successfully
+2024-11-11 10:51:05,041 :: INFO :: evaluating model malteos/scincl
+2024-11-11 10:51:05,041 :: INFO :: started task AmazonCounterfactualClassification(name='AmazonCounterfactualClassification', languages=['eng'])
+2024-11-11 10:51:38,694 :: INFO :: ended task AmazonCounterfactualClassification(name='AmazonCounterfactualClassification', languages=['eng'])
+2024-11-11 10:51:39,103 :: INFO :: started task AmazonPolarityClassification(name='AmazonPolarityClassification', languages=['eng'])
+2024-11-11 11:29:02,001 :: INFO :: ended task AmazonPolarityClassification(name='AmazonPolarityClassification', languages=['eng'])
+2024-11-11 11:29:02,546 :: INFO :: started task AmazonReviewsClassification(name='AmazonReviewsClassification', languages=['eng'])
+2024-11-11 11:29:33,123 :: INFO :: ended task AmazonReviewsClassification(name='AmazonReviewsClassification', languages=['eng'])
+2024-11-11 11:29:33,507 :: INFO :: started task ArguAna(name='ArguAna', languages=['eng'])
+2024-11-11 11:31:34,166 :: INFO :: ended task ArguAna(name='ArguAna', languages=['eng'])
+2024-11-11 11:31:34,715 :: INFO :: started task ArxivClusteringP2P(name='ArxivClusteringP2P', languages=['eng'])
+2024-11-11 14:36:53,044 :: INFO :: ended task ArxivClusteringP2P(name='ArxivClusteringP2P', languages=['eng'])
+2024-11-11 14:36:53,399 :: INFO :: started task ArxivClusteringS2S(name='ArxivClusteringS2S', languages=['eng'])

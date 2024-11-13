@@ -1,0 +1,1 @@
+{"name": "malteos/scincl", "revision": "ebc5348d184ba2fc9beee69b4e394263fce57b2e", "release_date": null, "languages": [], "n_parameters": null, "memory_usage": null, "max_tokens": null, "embed_dim": null, "license": null, "open_source": null, "similarity_fn_name": "cosine", "framework": ["Sentence Transformers"], "loader": null}
