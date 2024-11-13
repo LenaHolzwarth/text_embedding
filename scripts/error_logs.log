@@ -202,3 +202,8 @@
 2024-11-11 11:31:34,715 :: INFO :: started task ArxivClusteringP2P(name='ArxivClusteringP2P', languages=['eng'])
 2024-11-11 14:36:53,044 :: INFO :: ended task ArxivClusteringP2P(name='ArxivClusteringP2P', languages=['eng'])
 2024-11-11 14:36:53,399 :: INFO :: started task ArxivClusteringS2S(name='ArxivClusteringS2S', languages=['eng'])
+2024-11-13 16:26:09,723 :: INFO :: logger set up successfully
+2024-11-13 16:33:14,063 :: INFO :: logger set up successfully
+2024-11-13 16:33:20,525 :: INFO :: started task ArguAna(name='ArguAna', languages=['eng'])
+2024-11-13 16:33:34,834 :: INFO :: ended task ArguAna(name='ArguAna', languages=['eng'])
+2024-11-13 16:34:10,754 :: INFO :: logger set up successfully

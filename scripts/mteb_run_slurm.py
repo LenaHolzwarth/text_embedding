@@ -22,8 +22,12 @@ logger.info("logger set up successfully")
 # dict to map model names to their SentenceTransformer names
 model_shortcuts = {"glove": "sentence-transformers/average_word_embeddings_glove.6B.300d",
                    "komninos": "average_word_embeddings_komninos",
+                   "mpnet": "microsoft/mpnet-base",
                    "sbert" : "sentence-transformers/all-mpnet-base-v2",
-                   "simcse_u": "princeton-nlp/unsup-simcse-bert-base-uncased"}
+                   "scincl": "malteos/scincl",
+                   "simcse_u": "princeton-nlp/unsup-simcse-bert-base-uncased",
+                   "specter": "allenai/specter",
+                   "t5xxl": "sentence-transformers/sentence-t5-xxl"}
 
 
 # check if command line arguments exist
@@ -60,7 +64,7 @@ for task in tasks:
     try:
         evaluation = mteb.MTEB(tasks=[task])
         results = evaluation.run(model, 
-                                 output_folder="/gpfs01/berens/user/lholzwarth/text_embedding/MTEB/results",
+                                 output_folder="/home/berens/bep216/text_embedding/MTEB/results",
                                  encode_kwargs = {'batch_size': 64})
         logger.info(f"ended task {task}")
     except Exception as e:
