@@ -3,6 +3,7 @@ from sentence_transformers import SentenceTransformer
 import torch
 import gc
 import logging 
+from src import tfidf_for_mteb
 
 # set up error logging
 logger = logging.getLogger(__name__)
@@ -30,7 +31,7 @@ model_shortcuts = {"glove": "sentence-transformers/average_word_embeddings_glove
 
 
 # get user input
-model_name = input("\nmodel name (one of 'glove', 'komninos', 'sbert' or full SentenceTransformer names)")
+model_name = input("\nmodel name (one of 'tfidf', 'glove', 'komninos', 'sbert' or full SentenceTransformer names)")
 
 task_type = input("\ntask type (one of 'b' for benchmark, 't' for task suite or 's' for single task)")
 
@@ -53,7 +54,11 @@ torch.cuda.empty_cache()
 # define the model
 if model_name in model_shortcuts:
     model_name = model_shortcuts[model_name]
-model = mteb.get_model(model_name)
+
+if model_name == "tfidf":
+    model = tfidf_for_mteb.Tfidf()
+else:
+    model = mteb.get_model(model_name)
 logger.info(f"evaluating model {model_name}")
 
 # run each task consecutively
