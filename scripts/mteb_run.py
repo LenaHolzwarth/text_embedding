@@ -3,7 +3,7 @@ from sentence_transformers import SentenceTransformer
 import torch
 import gc
 import logging 
-from src import tfidf_for_mteb
+from src import tfidf_for_mteb, tfidf_rnd100_log, tfidf_rnd768_log, tfidf_svd, tfidf_log, tfidf_svd_log_old
 
 # set up error logging
 logger = logging.getLogger(__name__)
@@ -44,6 +44,11 @@ elif task_type == "t":
 elif task_type == "s":
     task_name = input("\ntask name(s)").split()
     tasks = mteb.get_tasks(tasks=task_name)
+elif task_type == "selection":
+    selection = ["ArguAna", "ArxivClusteringP2P", "BiorxivClusteringP2P", "MedrxivClusteringP2P", "MindSmallReranking",
+                 "RedditClusteringP2P", "SCIDOCS", "SciDocsRR", "StackExchangeClusteringP2P", "STS15", "STS16",
+                 "STSBenchmark"]
+    tasks = mteb.get_tasks(tasks=selection)
 else:
     raise Exception(f"{task_type} is invalid task type. Must be one of 'b', 't' or 's'")
 
@@ -55,10 +60,24 @@ torch.cuda.empty_cache()
 if model_name in model_shortcuts:
     model_name = model_shortcuts[model_name]
 
+# directory for sparse results
+results_folder = "/gpfs01/berens/user/lholzwarth/text_embedding/MTEB/sparse_results"
+
 if model_name == "tfidf":
     model = tfidf_for_mteb.Tfidf()
+elif model_name == "tfidf_svd":
+    model = tfidf_svd.Tfidf()
+elif model_name == "tfidf_svd_log_old":
+    model = tfidf_svd_log_old.Tfidf()
+elif model_name == "tfidf_log":
+    model = tfidf_log.Tfidf()
+elif model_name == "tfidf_rnd100_log":
+    model = tfidf_rnd100_log.Tfidf()
+elif model_name == "tfidf_rnd768_log":
+    model = tfidf_rnd768_log.Tfidf()
 else:
     model = mteb.get_model(model_name)
+    results_folder = "/gpfs01/berens/user/lholzwarth/text_embedding/MTEB/results"
 logger.info(f"evaluating model {model_name}")
 
 # run each task consecutively
@@ -67,7 +86,7 @@ for task in tasks:
     try:
         evaluation = mteb.MTEB(tasks=[task])
         results = evaluation.run(model, 
-                                 output_folder="/gpfs01/berens/user/lholzwarth/text_embedding/MTEB/results",
+                                 output_folder=results_folder,
                                  encode_kwargs = {'batch_size': 64})
         logger.info(f"ended task {task}")
     except Exception as e:

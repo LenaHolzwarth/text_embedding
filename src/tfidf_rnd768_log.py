@@ -15,13 +15,12 @@ class Tfidf():
         #self.model_card_data = ModelCard(name = "Tfidf", revision = "0.1")
         #self.similarity_fn_name = "" #cosine is the default
         self.mteb_model_meta = ModelMeta(name = "Tfidf", 
-                                         revision = "1.0",
+                                         revision = "tfidf_rnd768_log",
                                          release_date = "2024-10-01",
                                          languages = [])
 
     def encode(self, sentences: list[str], vocab: list[str] = [], 
-               dtype = np.float64, n_documents: int = 1, 
-               svd_threshold: int = 1000000, **kwargs: Any
+               dtype = np.float64, **kwargs: Any
     ) -> torch.Tensor | np.ndarray:
         """Encodes the given sentences using the encoder.
 
@@ -35,22 +34,17 @@ class Tfidf():
         # initialize the model
         if vocab == []:
             print("no vocab provided, computed by sklearns TfidfVectorizer call")
-            vectorizer = TfidfVectorizer(dtype=dtype)
+            vectorizer = TfidfVectorizer(dtype=dtype, sublinear_tf=True)
         else: 
-            vectorizer = TfidfVectorizer(dtype=dtype, vocabulary = vocab)
+            vectorizer = TfidfVectorizer(dtype=dtype, sublinear_tf=True, vocabulary = vocab)
         # fit on data
         sent_vec = vectorizer.fit_transform(sentences)
         print(f"tfidf matrix shape{sent_vec.shape}")
 
-        # if sparse rep. or total document number is too large, transform to smaller dim using svd
-        if n_documents > svd_threshold: # 1 mio as arbitrary cutoff, might vary
-            print(f"number of total documents ({n_documents}) too large, use svd reduction)")
-            svd = TruncatedSVD(n_components=100, algorithm='arpack', random_state=0)
-            sent_np = normalize(svd.fit_transform(sent_vec))
-
-        else:
-            # transform sparse matrix to numpy array
-            sent_np = sent_vec.toarray()
+        # transform to smaller dim using random projections
+        np.random.seed(42)
+        P = 2 * np.random.randint(0, 2, size=(sent_vec.shape[1], 768)) - 1
+        sent_np = sent_vec @ P  
 
         print(f"dense matrix shape{sent_np.shape}")
         # transform numpy array to tensor

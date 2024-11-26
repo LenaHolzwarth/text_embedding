@@ -1,0 +1,32 @@
+
+model name (one of 'tfidf', 'glove', 'komninos', 'sbert' or full SentenceTransformer names)
+task type (one of 'b' for benchmark, 't' for task suite or 's' for single task)──────────────────────────────────────────────────────────────────────────────── Selected tasks  ─────────────────────────────────────────────────────────────────────────────────
+Retrieval
+    - ArguAna, s2p
+
+
+AbsTaskRetrieval.evaluate called
+get_vocab called!
+input: <class 'list'> of length 10080
+vocab of lenght 33337 starting with ['misspent', 'hardin', 'farmer', 'cartoon', 'precident', 'shailegh', 'seep', 'scrapbook', 'stark', 'douthat']
+tfidf matrix shape(1406, 33337)
+dense matrix shape(1406, 768)
+tfidf matrix shape(8674, 33337)
+dense matrix shape(8674, 768)
+──────────────────────────────────────────────────────────────────────────────── Selected tasks  ─────────────────────────────────────────────────────────────────────────────────
+Clustering
+    - ArxivClusteringP2P, p2p
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['sentences', 'labels'],
+        num_rows: 31
+    })
+})
+_evaluate_subset in AbsTaskClustering called
+get_vocab called!
+input: <class 'list'> of length 732723
+vocab of lenght 331735 starting with ['j0726', 'arthurxlw', 'mors', 'groupstrategyproofness', 'diract', 'fireplace', 'ny40', 'pathogenically', 'sirah', 'na64']

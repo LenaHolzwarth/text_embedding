@@ -15,7 +15,7 @@ class Tfidf():
         #self.model_card_data = ModelCard(name = "Tfidf", revision = "0.1")
         #self.similarity_fn_name = "" #cosine is the default
         self.mteb_model_meta = ModelMeta(name = "Tfidf", 
-                                         revision = "1.0",
+                                         revision = "tfidf_log",
                                          release_date = "2024-10-01",
                                          languages = [])
 
@@ -35,9 +35,9 @@ class Tfidf():
         # initialize the model
         if vocab == []:
             print("no vocab provided, computed by sklearns TfidfVectorizer call")
-            vectorizer = TfidfVectorizer(dtype=dtype)
+            vectorizer = TfidfVectorizer(dtype=dtype, sublinear_tf=True)
         else: 
-            vectorizer = TfidfVectorizer(dtype=dtype, vocabulary = vocab)
+            vectorizer = TfidfVectorizer(dtype=dtype, sublinear_tf=True, vocabulary = vocab)
         # fit on data
         sent_vec = vectorizer.fit_transform(sentences)
         print(f"tfidf matrix shape{sent_vec.shape}")
