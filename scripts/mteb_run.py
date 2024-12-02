@@ -3,7 +3,7 @@ from sentence_transformers import SentenceTransformer
 import torch
 import gc
 import logging 
-from src import tfidf_for_mteb, tfidf_rnd100_log, tfidf_rnd768_log, tfidf_svd, tfidf_log, tfidf_svd_log_old
+from src import tfidf_for_mteb, tfidf_rnd100_log, tfidf_rnd768_log, tfidf_svd, tfidf_log, tfidf_svd_log_old, tfidf_svd_log
 
 # set up error logging
 logger = logging.getLogger(__name__)
@@ -67,6 +67,8 @@ if model_name == "tfidf":
     model = tfidf_for_mteb.Tfidf()
 elif model_name == "tfidf_svd":
     model = tfidf_svd.Tfidf()
+elif model_name == "tfidf_svd_log":
+    model = tfidf_svd_log.Tfidf()
 elif model_name == "tfidf_svd_log_old":
     model = tfidf_svd_log_old.Tfidf()
 elif model_name == "tfidf_log":
