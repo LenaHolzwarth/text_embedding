@@ -3,7 +3,7 @@ from sentence_transformers import SentenceTransformer
 import torch
 import gc
 import logging 
-from src import tfidf_for_mteb, tfidf_rnd100_log, tfidf_rnd768_log, tfidf_svd, tfidf_log, tfidf_svd_log_old, tfidf_svd_log
+import src
 
 # set up error logging
 logger = logging.getLogger(__name__)
@@ -64,19 +64,21 @@ if model_name in model_shortcuts:
 results_folder = "/gpfs01/berens/user/lholzwarth/text_embedding/MTEB/sparse_results"
 
 if model_name == "tfidf":
-    model = tfidf_for_mteb.Tfidf()
-elif model_name == "tfidf_svd":
-    model = tfidf_svd.Tfidf()
-elif model_name == "tfidf_svd_log":
-    model = tfidf_svd_log.Tfidf()
-elif model_name == "tfidf_svd_log_old":
-    model = tfidf_svd_log_old.Tfidf()
+    model = src.tfidf_for_mteb.Tfidf()
 elif model_name == "tfidf_log":
-    model = tfidf_log.Tfidf()
+    model = src.tfidf_log.Tfidf()
+elif model_name == "tfidf_svd":
+    model = src.tfidf_svd.Tfidf()
+elif model_name == "tfidf_svd_log":
+    model = src.tfidf_svd_log.Tfidf()
+elif model_name == "tfidf_svd200_log":
+    model = src.tfidf_svd200_log.Tfidf()
+elif model_name == "tfidf_svd_log_old":
+    model = src.tfidf_svd_log_old.Tfidf()
 elif model_name == "tfidf_rnd100_log":
-    model = tfidf_rnd100_log.Tfidf()
+    model = src.tfidf_rnd100_log.Tfidf()
 elif model_name == "tfidf_rnd768_log":
-    model = tfidf_rnd768_log.Tfidf()
+    model = src.tfidf_rnd768_log.Tfidf()
 else:
     model = mteb.get_model(model_name)
     results_folder = "/gpfs01/berens/user/lholzwarth/text_embedding/MTEB/results"

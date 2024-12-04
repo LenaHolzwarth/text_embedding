@@ -1,0 +1,24 @@
+
+model name (one of 'tfidf', 'glove', 'komninos', 'sbert' or full SentenceTransformer names)
+task type (one of 'b' for benchmark, 't' for task suite or 's' for single task)───────────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────────
+Retrieval
+    - ArguAna, s2p
+
+
+AbsTaskRetrieval.evaluate called
+get_vocab called!
+input: <class 'list'> of length 10080
+vocab of lenght 33337 starting with ['000km2', '00km2', '06billion', '098bln', '1000s', '100bn', '100km2', '100m', '100million', '100s']
+tfidf matrix shape(10080, 33337)
+V not provided, fit SVD to get V
+tfidf matrix shape(1406, 33337)
+V available, perform SVD dim reduction
+dense matrix shape(1406, 200)
+tfidf matrix shape(8674, 33337)
+V available, perform SVD dim reduction
+dense matrix shape(8674, 200)
+───────────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────────
+Clustering
+    - ArxivClusteringP2P, p2p
+
+
