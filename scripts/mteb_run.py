@@ -81,7 +81,7 @@ elif model_name == "tfidf_rnd768_log":
     model = src.tfidf_rnd768_log.Tfidf()
 else:
     model = mteb.get_model(model_name)
-    results_folder = "/gpfs01/berens/user/lholzwarth/text_embedding/MTEB/results"
+    #results_folder = "/gpfs01/berens/user/lholzwarth/text_embedding/MTEB/results"
 logger.info(f"evaluating model {model_name}")
 
 # run each task consecutively
