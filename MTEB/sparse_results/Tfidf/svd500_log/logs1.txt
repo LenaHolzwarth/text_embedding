@@ -1,0 +1,404 @@
+
+model name (one of 'tfidf', 'glove', 'komninos', 'sbert' or full SentenceTransformer names)
+task type (one of 'b' for benchmark, 't' for task suite or 's' for single task)───────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────
+Retrieval
+    - ArguAna, s2p
+
+
+AbsTaskRetrieval.evaluate called
+get_vocab called!
+input: <class 'list'> of length 10080
+vocab of lenght 33337 starting with ['000km2', '00km2', '06billion', '098bln', '1000s', '100bn', '100km2', '100m', '100million', '100s']
+tfidf matrix shape(10080, 33337)
+V not provided, fit SVD to get V
+tfidf matrix shape(1406, 33337)
+V available, perform SVD dim reduction
+dense matrix shape(1406, 500)
+tfidf matrix shape(8674, 33337)
+V available, perform SVD dim reduction
+dense matrix shape(8674, 500)
+───────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────
+Clustering
+    - ArxivClusteringP2P, p2p
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['sentences', 'labels'],
+        num_rows: 31
+    })
+})
+_evaluate_subset in AbsTaskClustering called
+get_vocab called!
+input: <class 'list'> of length 732723
+vocab of lenght 331735 starting with ['0000011d', '000026yorke', '00007h', '0001035v2', '00015t', '00019d', '0002bx', '0002d', '0002ev', '0002msun']
+tfidf matrix shape(732723, 331735)
+V not provided, fit SVD to get V
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 331735)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 331735)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 331735)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 331735)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 331735)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 331735)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 331735)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 331735)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 331735)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 331735)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 331735)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 331735)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 331735)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 331735)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 331735)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 331735)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 331735)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 331735)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 331735)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 331735)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 331735)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(3750, 331735)
+V available, perform SVD dim reduction
+dense matrix shape(3750, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 331735)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(22438, 331735)
+V available, perform SVD dim reduction
+dense matrix shape(22438, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(22608, 331735)
+V available, perform SVD dim reduction
+dense matrix shape(22608, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(8927, 331735)
+V available, perform SVD dim reduction
+dense matrix shape(8927, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 331735)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 331735)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 331735)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 331735)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 331735)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 500)
+───────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────
+Clustering
+    - BiorxivClusteringP2P, p2p
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['sentences', 'labels'],
+        num_rows: 10
+    })
+})
+_evaluate_subset in AbsTaskClustering called
+get_vocab called!
+input: <class 'list'> of length 75000
+vocab of lenght 137851 starting with ['000bp', '000km', '000s', '000x', '001x', '0020t', '0025mg', '003g', '003ml', '0045ml']
+tfidf matrix shape(75000, 137851)
+V not provided, fit SVD to get V
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 137851)
+V available, perform SVD dim reduction
+dense matrix shape(10000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 137851)
+V available, perform SVD dim reduction
+dense matrix shape(10000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 137851)
+V available, perform SVD dim reduction
+dense matrix shape(10000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 137851)
+V available, perform SVD dim reduction
+dense matrix shape(10000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 137851)
+V available, perform SVD dim reduction
+dense matrix shape(10000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 137851)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 137851)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 137851)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 137851)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 137851)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 500)
+───────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────
+Clustering
+    - MedrxivClusteringP2P, p2p
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['sentences', 'labels'],
+        num_rows: 10
+    })
+})
+_evaluate_subset in AbsTaskClustering called
+get_vocab called!
+input: <class 'list'> of length 37500
+vocab of lenght 68780 starting with ['0001for', '000bdt', '000copies', '000gbp', '000th', '000x', '001and', '001no', '002ng', '004x']
+tfidf matrix shape(37500, 68780)
+V not provided, fit SVD to get V
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 68780)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 68780)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 68780)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 68780)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 68780)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(2500, 68780)
+V available, perform SVD dim reduction
+dense matrix shape(2500, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(2500, 68780)
+V available, perform SVD dim reduction
+dense matrix shape(2500, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(2500, 68780)
+V available, perform SVD dim reduction
+dense matrix shape(2500, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(2500, 68780)
+V available, perform SVD dim reduction
+dense matrix shape(2500, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(2500, 68780)
+V available, perform SVD dim reduction
+dense matrix shape(2500, 500)
+───────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────
+Reranking
+    - MindSmallReranking, s2s
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    train: Dataset({
+        features: ['id', 'query', 'positive', 'negative'],
+        num_rows: 153727
+    })
+    test: Dataset({
+        features: ['id', 'query', 'positive', 'negative'],
+        num_rows: 70938
+    })
+})
+evaluate subset called in abstaskreranking
+get_vocab called!
+input: <class 'list'> of length 5020605
+vocab of lenght 28058 starting with ['000hp', '000th', '0t', '1000bulbs', '100gb', '100k', '100lb', '100m', '100s', '100th']
+tfidf matrix shape(5020605, 28058)
+V not provided, fit SVD to get V
+
+Error while evaluating MindSmallReranking: Indexing a matrix of 2510302500 elements would incur an in integer overflow in LAPACK.
+Traceback (most recent call last):
+  File "/gpfs01/berens/user/lholzwarth/text_embedding/scripts/mteb_run.py", line 98, in <module>
+    results = evaluation.run(model, 
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs01/berens/user/lholzwarth/sparse_mteb/mteb/evaluation/MTEB.py", line 465, in run
+    raise e
+  File "/gpfs01/berens/user/lholzwarth/sparse_mteb/mteb/evaluation/MTEB.py", line 426, in run
+    results, tick, tock = self._run_eval(
+                          ^^^^^^^^^^^^^^^
+  File "/gpfs01/berens/user/lholzwarth/sparse_mteb/mteb/evaluation/MTEB.py", line 301, in _run_eval
+    results = task.evaluate(
+              ^^^^^^^^^^^^^^
+  File "/gpfs01/berens/user/lholzwarth/sparse_mteb/mteb/abstasks/AbsTask.py", line 140, in evaluate
+    scores[hf_subset] = self._evaluate_subset(
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs01/berens/user/lholzwarth/sparse_mteb/mteb/abstasks/AbsTaskReranking.py", line 72, in _evaluate_subset
+    v = model.encode(vocab, task_name=self.metadata.name,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs01/berens/user/lholzwarth/sparse_mteb/mteb/models/sentence_transformer_wrapper.py", line 101, in encode
+    embeddings = self.model.encode(
+                 ^^^^^^^^^^^^^^^^^^
+  File "/gpfs01/berens/user/lholzwarth/text_embedding/src/tfidf_svd500_log.py", line 48, in encode
+    svd.fit(sent_vec)
+  File "/gpfs01/berens/user/lholzwarth/.local/lib/python3.11/site-packages/sklearn/decomposition/_truncated_svd.py", line 208, in fit
+    self.fit_transform(X)
+  File "/gpfs01/berens/user/lholzwarth/.local/lib/python3.11/site-packages/sklearn/utils/_set_output.py", line 316, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs01/berens/user/lholzwarth/.local/lib/python3.11/site-packages/sklearn/base.py", line 1473, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs01/berens/user/lholzwarth/.local/lib/python3.11/site-packages/sklearn/decomposition/_truncated_svd.py", line 233, in fit_transform
+    U, Sigma, VT = svds(X, k=self.n_components, tol=self.tol, v0=v0)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs01/berens/user/lholzwarth/.local/lib/python3.11/site-packages/scipy/sparse/linalg/_eigen/_svds.py", line 529, in svds
+    u, s, vh = svd(Av, full_matrices=False, overwrite_a=True)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs01/berens/user/lholzwarth/.local/lib/python3.11/site-packages/scipy/linalg/_decomp_svd.py", line 149, in svd
+    raise ValueError(f"Indexing a matrix of {sz} elements would "
+ValueError: Indexing a matrix of 2510302500 elements would incur an in integer overflow in LAPACK.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/gpfs01/berens/user/lholzwarth/text_embedding/scripts/mteb_run.py", line 103, in <module>
+    logging.error(traceback.format_exc())
+                  ^^^^^^^^^
+NameError: name 'traceback' is not defined

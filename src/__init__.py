@@ -5,5 +5,7 @@ from . import tfidf_rnd768_log
 from . import tfidf_svd_log_old
 from . import tfidf_svd_log
 from . import tfidf_svd
+from . import tfidf_svd50_log
 from . import tfidf_svd200_log
-
+from . import tfidf_svd300_log
+from . import tfidf_svd500_log
