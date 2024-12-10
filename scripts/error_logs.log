@@ -762,3 +762,16 @@
 2024-12-04 17:52:47,497 :: INFO :: ended task STS16STS(name='STS16', languages=['eng'])
 2024-12-04 17:52:47,834 :: INFO :: started task STSBenchmarkSTS(name='STSBenchmark', languages=['eng'])
 2024-12-04 17:52:58,300 :: INFO :: ended task STSBenchmarkSTS(name='STSBenchmark', languages=['eng'])
+2024-12-09 10:44:27,160 :: INFO :: logger set up successfully
+2024-12-09 10:47:31,689 :: INFO :: logger set up successfully
+2024-12-09 10:48:36,807 :: INFO :: evaluating model tfidf_svd_log_piecewise
+2024-12-09 10:48:36,807 :: INFO :: started task ArxivClusteringP2P(name='ArxivClusteringP2P', languages=['eng'])
+2024-12-09 10:56:34,682 :: INFO :: ended task ArxivClusteringP2P(name='ArxivClusteringP2P', languages=['eng'])
+2024-12-09 10:56:35,157 :: INFO :: started task BiorxivClusteringP2P(name='BiorxivClusteringP2P', languages=['eng'])
+2024-12-09 10:57:48,209 :: INFO :: ended task BiorxivClusteringP2P(name='BiorxivClusteringP2P', languages=['eng'])
+2024-12-09 10:57:48,595 :: INFO :: started task MedrxivClusteringP2P(name='MedrxivClusteringP2P', languages=['eng'])
+2024-12-09 10:58:34,934 :: INFO :: ended task MedrxivClusteringP2P(name='MedrxivClusteringP2P', languages=['eng'])
+2024-12-09 10:58:35,234 :: INFO :: started task RedditClusteringP2P(name='RedditClusteringP2P', languages=['eng'])
+2024-12-09 11:02:39,058 :: INFO :: ended task RedditClusteringP2P(name='RedditClusteringP2P', languages=['eng'])
+2024-12-09 11:02:39,357 :: INFO :: started task StackExchangeClusteringP2P(name='StackExchangeClusteringP2P', languages=['eng'])
+2024-12-09 11:04:34,493 :: INFO :: ended task StackExchangeClusteringP2P(name='StackExchangeClusteringP2P', languages=['eng'])

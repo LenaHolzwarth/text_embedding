@@ -48,8 +48,9 @@ elif task_type == "selection":
     #selection = ["ArguAna", "ArxivClusteringP2P", "BiorxivClusteringP2P", "MedrxivClusteringP2P", "MindSmallReranking",
     #             "RedditClusteringP2P", "SCIDOCS", "SciDocsRR", "StackExchangeClusteringP2P", "STS15", "STS16",
     #             "STSBenchmark"]
-    selection = ["RedditClusteringP2P", "SCIDOCS", "SciDocsRR", "StackExchangeClusteringP2P", "STS15", "STS16",
-                 "STSBenchmark"]
+    #selection = ["RedditClusteringP2P", "SCIDOCS", "SciDocsRR", "StackExchangeClusteringP2P", "STS15", "STS16",
+    #             "STSBenchmark"]
+    selection = ["ArxivClusteringP2P", "BiorxivClusteringP2P", "MedrxivClusteringP2P", "RedditClusteringP2P", "StackExchangeClusteringP2P"]
     tasks = mteb.get_tasks(tasks=selection)
 else:
     raise Exception(f"{task_type} is invalid task type. Must be one of 'b', 't' or 's'")
@@ -81,6 +82,8 @@ elif model_name == "tfidf_svd300_log":
     model = src.tfidf_svd300_log.Tfidf()
 elif model_name == "tfidf_svd500_log":
     model = src.tfidf_svd500_log.Tfidf()
+elif model_name == "tfidf_svd_log_piecewise":
+    model = src.tfidf_svd_log_piecewise.Tfidf()
 elif model_name == "tfidf_svd_log_old":
     model = src.tfidf_svd_log_old.Tfidf()
 elif model_name == "tfidf_rnd100_log":
