@@ -15,7 +15,7 @@ class Tfidf():
         #self.model_card_data = ModelCard(name = "Tfidf", revision = "0.1")
         #self.similarity_fn_name = "" #cosine is the default
         self.mteb_model_meta = ModelMeta(name = "Tfidf", 
-                                         revision = "tfidf_rnd768_log",
+                                         revision = "rnd768_log",
                                          release_date = "2024-10-01",
                                          languages = [])
 
