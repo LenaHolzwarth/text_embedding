@@ -15,7 +15,7 @@ class Tfidf():
         #self.model_card_data = ModelCard(name = "Tfidf", revision = "0.1")
         #self.similarity_fn_name = "" #cosine is the default
         self.mteb_model_meta = ModelMeta(name = "Tfidf", 
-                                         revision = "tfidf_rnd100_log",
+                                         revision = "rnd100_log",
                                          release_date = "2024-10-01",
                                          languages = [])
 
@@ -53,14 +53,3 @@ class Tfidf():
         return sent_np
 
 
-# helper function to extract vocab 
-def get_vocab(text: [str], token_pattern: str = r"(?u)\b\w\w+\b", lowercase: bool = True) -> [str]:
-        """return a list of unique words ocurring in text that fulfill the specified token_pattern
-        The default token_pattern is the one used in the scikit-learn TfidfVectorizer class
-        """
-        if lowercase:
-            vocab = [word for sent in text for word in re.findall(token_pattern, sent.lower())]
-        else:
-            vocab = [word for sent in text for word in re.findall(token_pattern, sent)]
-
-        return list(set(vocab))
