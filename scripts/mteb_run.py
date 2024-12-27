@@ -94,6 +94,7 @@ else:
     model = mteb.get_model(model_name)
     #results_folder = "/gpfs01/berens/user/lholzwarth/text_embedding/MTEB/results"
 logger.info(f"evaluating model {model_name}")
+print(model_name)
 
 # run each task consecutively
 for task in tasks:
@@ -105,8 +106,7 @@ for task in tasks:
                                  encode_kwargs = {'batch_size': 64})
         logger.info(f"ended task {task}")
     except Exception as e:
-        logging.error(traceback.format_exc())
-        #or logger.exception()
+        logger.exception()
         raise
 
     # free GPU memory 
