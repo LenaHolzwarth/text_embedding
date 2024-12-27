@@ -1,7 +1,7 @@
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.decomposition import TruncatedSVD
 from sklearn.preprocessing import normalize
-from typing import Any
+from typing import Any, List
 import torch
 import numpy as np
 import re
@@ -51,16 +51,4 @@ class Tfidf():
         #sent_np = torch.from_numpy(sent_np)
 
         return sent_np
-
-
-# helper function to extract vocab 
-def get_vocab(text: [str], token_pattern: str = r"(?u)\b\w\w+\b", lowercase: bool = True) -> [str]:
-        """return a list of unique words ocurring in text that fulfill the specified token_pattern
-        The default token_pattern is the one used in the scikit-learn TfidfVectorizer class
-        """
-        if lowercase:
-            vocab = [word for sent in text for word in re.findall(token_pattern, sent.lower())]
-        else:
-            vocab = [word for sent in text for word in re.findall(token_pattern, sent)]
-
-        return list(set(vocab))
+    
