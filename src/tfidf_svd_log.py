@@ -37,6 +37,11 @@ class Tfidf():
         # fit on data
         sent_vec = vectorizer.fit_transform(sentences)
         print(f"tfidf matrix shape{sent_vec.shape}")
+
+        # if vocab is smaller than svd size, don't perform reduction
+        if len(vocab) < 100:
+            print(f"vocab of length {len(vocab)} too small to perform svd reduction")
+            return sent_vec.toarray()
         
         
         # check if SVD components are already available
