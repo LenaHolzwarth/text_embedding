@@ -13,7 +13,7 @@ if logger.hasHandlers():
     logger.handlers.clear()
 
 logger.setLevel(logging.INFO)
-file_handler = logging.FileHandler("error_logs.log")
+file_handler = logging.FileHandler("error_logs_vocab.log")
 formatter = logging.Formatter("%(asctime)s :: %(levelname)s :: %(message)s")
 file_handler.setFormatter(formatter)
 logger.addHandler(file_handler)
