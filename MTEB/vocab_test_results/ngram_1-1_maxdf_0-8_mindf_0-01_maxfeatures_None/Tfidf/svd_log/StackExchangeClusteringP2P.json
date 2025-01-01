@@ -1,0 +1,32 @@
+{
+  "dataset_revision": "815ca46b2622cec33ccafc3735d572c266efdb44",
+  "evaluation_time": 79.35689926147461,
+  "kg_co2_emissions": null,
+  "mteb_version": "0.1",
+  "scores": {
+    "test": [
+      {
+        "hf_subset": "default",
+        "languages": [
+          "eng-Latn"
+        ],
+        "main_score": 0.33037486252034426,
+        "v_measure": 0.33037486252034426,
+        "v_measure_std": 0.019249419820377176,
+        "v_measures": [
+          0.31200496790324467,
+          0.3142924146742951,
+          0.3136869246165626,
+          0.3062200964241534,
+          0.31181625845813565,
+          0.35891678317982617,
+          0.3435446459244434,
+          0.3499924509548683,
+          0.3473754714548417,
+          0.3458986116130711
+        ]
+      }
+    ]
+  },
+  "task_name": "StackExchangeClusteringP2P"
+}

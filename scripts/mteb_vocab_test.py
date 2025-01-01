@@ -31,10 +31,10 @@ tasks = mteb.get_tasks(tasks=selection)
 model = src.tfidf_svd_log.Tfidf()
 
 # select vocab hyperparameters
-ngram_range_ = [(1,1), (1,2), (2,2)]    # length of sequences to tokenize
+ngram_range_ = [(1,2), (2,2)]    # length of sequences to tokenize
 max_df_ = [x/10 for x in range(2,10,2)] # ignore terms that have a document frequency higher than this (uninformative b.c. too frequent)
                                         # -> the lower it is set, the more words are ignored
-min_df_ = [0.01, 0.02, 0.05, 0.1]                           # ignore terms that have a document frequency lower than this (uninformative b.c. too infrequent)
+min_df_ = [0.01, 0.02, 0.05]                           # ignore terms that have a document frequency lower than this (uninformative b.c. too infrequent)
                                         # -> the higher it is set, the more words are ignored
 max_features_ = [None]
 
