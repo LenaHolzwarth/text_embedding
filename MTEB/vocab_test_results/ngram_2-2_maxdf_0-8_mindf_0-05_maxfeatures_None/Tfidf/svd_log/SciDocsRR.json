@@ -1,0 +1,27 @@
+{
+  "dataset_revision": "d3c5e1fc0b855ab6097bf1cda04dd73947d7caab",
+  "evaluation_time": 7.4195191860198975,
+  "kg_co2_emissions": null,
+  "mteb_version": "0.1",
+  "scores": {
+    "test": [
+      {
+        "hf_subset": "default",
+        "languages": [
+          "eng-Latn"
+        ],
+        "main_score": 0.0,
+        "map": 0.0,
+        "mrr": 0.0,
+        "nAUC_map_diff1": 0.0,
+        "nAUC_map_max": 0.0,
+        "nAUC_map_std": 0.0,
+        "nAUC_mrr_diff1": 0.0,
+        "nAUC_mrr_max": 0.0,
+        "nAUC_mrr_std": 0.0
+      }
+    ]
+  },
+  "task_name": "SciDocsRR",
+  "comment": "didn't work bc. vocab settings left no words to be considered"
+}
