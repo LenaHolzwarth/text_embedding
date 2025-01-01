@@ -1,7 +1,0 @@
-{
-    "tfidf_log": {
-        "biorxiv_full": 0.6066183305447109,
-        "medrxiv_full": 0.6466666666666666,
-        "stackexchange_full": 0.47533333333333333
-    }
-}
