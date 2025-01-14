@@ -10,3 +10,4 @@ from . import tfidf_svd200_log
 from . import tfidf_svd300_log
 from . import tfidf_svd500_log
 from . import tfidf_svd_log_piecewise
+from . import tfidf_svd_log_novocab

@@ -1,0 +1,2891 @@
+tfidf_svd500_log
+────────────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────────
+Retrieval
+    - ArguAna, s2p
+
+
+────────────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────────
+Clustering
+    - ArxivClusteringP2P, p2p
+
+
+────────────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────────
+Clustering
+    - BiorxivClusteringP2P, p2p
+
+
+────────────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────────
+Clustering
+    - MedrxivClusteringP2P, p2p
+
+
+────────────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────────
+Clustering
+    - RedditClusteringP2P, p2p
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['sentences', 'labels'],
+        num_rows: 10
+    })
+})
+_evaluate_subset in AbsTaskClustering called
+get_vocab called!
+input: <class 'list'> of length 459399
+vocab settings: 
+ngram_range: (1, 1), 
+max_df: 1.0, 
+min_df: 1, 
+max_features: None
+vocab of lenght 320065 starting with ['wins', 'not', 'recording', 'correctly', 'got', 'in', 'solo', 'today', 'but', 'profile']
+tfidf matrix shape(459399, 320065)
+V not provided, fit SVD to get V
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(15592, 320065)
+V available, perform SVD dim reduction
+dense matrix shape(15592, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(79172, 320065)
+V available, perform SVD dim reduction
+dense matrix shape(79172, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(1942, 320065)
+V available, perform SVD dim reduction
+dense matrix shape(1942, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(13224, 320065)
+V available, perform SVD dim reduction
+dense matrix shape(13224, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(92303, 320065)
+V available, perform SVD dim reduction
+dense matrix shape(92303, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(28607, 320065)
+V available, perform SVD dim reduction
+dense matrix shape(28607, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(69146, 320065)
+V available, perform SVD dim reduction
+dense matrix shape(69146, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(67469, 320065)
+V available, perform SVD dim reduction
+dense matrix shape(67469, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(29683, 320065)
+V available, perform SVD dim reduction
+dense matrix shape(29683, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(62261, 320065)
+V available, perform SVD dim reduction
+dense matrix shape(62261, 500)
+────────────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────────
+Retrieval
+    - SCIDOCS, s2p
+
+
+AbsTaskRetrieval.evaluate called
+get_vocab called!
+input: <class 'list'> of length 26657
+vocab settings: 
+ngram_range: (1, 1), 
+max_df: 1.0, 
+min_df: 1, 
+max_features: None
+vocab of lenght 78426 starting with ['hybrid', 'of', 'genetic', 'algorithm', 'and', 'particle', 'swarm', 'optimization', 'for', 'recurrent']
+tfidf matrix shape(26657, 78426)
+V not provided, fit SVD to get V
+tfidf matrix shape(1000, 78426)
+V available, perform SVD dim reduction
+dense matrix shape(1000, 500)
+tfidf matrix shape(25657, 78426)
+V available, perform SVD dim reduction
+dense matrix shape(25657, 500)
+────────────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────────
+Reranking
+    - SciDocsRR, s2s
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    validation: Dataset({
+        features: ['query', 'positive', 'negative'],
+        num_rows: 3981
+    })
+    test: Dataset({
+        features: ['query', 'positive', 'negative'],
+        num_rows: 3978
+    })
+})
+evaluate subset called in abstaskreranking
+get_vocab called!
+input: <class 'list'> of length 396561
+vocab settings: 
+ngram_range: (1, 1), 
+max_df: 1.0, 
+min_df: 1, 
+max_features: None
+vocab of lenght 40089 starting with ['modified', 'particle', 'swarm', 'optimizer', 'hybrid', 'of', 'genetic', 'algorithm', 'and', 'optimization']
+tfidf matrix shape(396561, 40089)
+V not provided, fit SVD to get V
+tfidf matrix shape(3978, 40089)
+V available, perform SVD dim reduction
+dense matrix shape(3978, 500)
+tfidf matrix shape(85153, 40089)
+V available, perform SVD dim reduction
+dense matrix shape(85153, 500)
+────────────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────────
+Clustering
+    - StackExchangeClusteringP2P, p2p
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['sentences', 'labels'],
+        num_rows: 10
+    })
+})
+_evaluate_subset in AbsTaskClustering called
+get_vocab called!
+input: <class 'list'> of length 75000
+vocab settings: 
+ngram_range: (1, 1), 
+max_df: 1.0, 
+min_df: 1, 
+max_features: None
+vocab of lenght 120133 starting with ['does', 'anyone', 'have', 'example', 'of', 'dual', 'contouring', 'in', 'trying', 'to']
+tfidf matrix shape(75000, 120133)
+V not provided, fit SVD to get V
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 120133)
+V available, perform SVD dim reduction
+dense matrix shape(10000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 120133)
+V available, perform SVD dim reduction
+dense matrix shape(10000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 120133)
+V available, perform SVD dim reduction
+dense matrix shape(10000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 120133)
+V available, perform SVD dim reduction
+dense matrix shape(10000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 120133)
+V available, perform SVD dim reduction
+dense matrix shape(10000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 120133)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 120133)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 120133)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 120133)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 120133)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 500)
+────────────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────────
+STS
+    - STS15, s2s
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['split', 'sentence1', 'sentence2', 'score'],
+        num_rows: 3000
+    })
+})
+get_vocab called!
+input: <class 'list'> of length 6000
+vocab settings: 
+ngram_range: (1, 1), 
+max_df: 1.0, 
+min_df: 1, 
+max_features: None
+vocab of lenght 7064 starting with ['you', 'll', 'need', 'to', 'check', 'the', 'particular', 'policies', 'of', 'each']
+tfidf matrix shape(6000, 7064)
+V not provided, fit SVD to get V
+tfidf matrix shape(3000, 7064)
+V available, perform SVD dim reduction
+dense matrix shape(3000, 500)
+tfidf matrix shape(3000, 7064)
+V available, perform SVD dim reduction
+dense matrix shape(3000, 500)
+────────────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────────
+STS
+    - STS16, s2s
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['split', 'sentence1', 'sentence2', 'score'],
+        num_rows: 1186
+    })
+})
+get_vocab called!
+input: <class 'list'> of length 2372
+vocab settings: 
+ngram_range: (1, 1), 
+max_df: 1.0, 
+min_df: 1, 
+max_features: None
+vocab of lenght 3878 starting with ['remained', 'under', 'the', 'banyan', 'tree', 'exhausted', 'by', 'my', 'daily', 'ritual']
+tfidf matrix shape(2372, 3878)
+V not provided, fit SVD to get V
+tfidf matrix shape(1186, 3878)
+V available, perform SVD dim reduction
+dense matrix shape(1186, 500)
+tfidf matrix shape(1186, 3878)
+V available, perform SVD dim reduction
+dense matrix shape(1186, 500)
+────────────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────────
+STS
+    - STSBenchmark, s2s
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    train: Dataset({
+        features: ['split', 'genre', 'dataset', 'year', 'sid', 'score', 'sentence1', 'sentence2'],
+        num_rows: 5749
+    })
+    validation: Dataset({
+        features: ['split', 'genre', 'dataset', 'year', 'sid', 'score', 'sentence1', 'sentence2'],
+        num_rows: 1500
+    })
+    test: Dataset({
+        features: ['split', 'genre', 'dataset', 'year', 'sid', 'score', 'sentence1', 'sentence2'],
+        num_rows: 1379
+    })
+})
+get_vocab called!
+input: <class 'list'> of length 2758
+vocab settings: 
+ngram_range: (1, 1), 
+max_df: 1.0, 
+min_df: 1, 
+max_features: None
+vocab of lenght 4665 starting with ['girl', 'is', 'styling', 'her', 'hair', 'group', 'of', 'men', 'play', 'soccer']
+tfidf matrix shape(2758, 4665)
+V not provided, fit SVD to get V
+tfidf matrix shape(1379, 4665)
+V available, perform SVD dim reduction
+dense matrix shape(1379, 500)
+tfidf matrix shape(1379, 4665)
+V available, perform SVD dim reduction
+dense matrix shape(1379, 500)
+tfidf_svd_log_piecewise
+────────────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────────
+Clustering
+    - ArxivClusteringP2P, p2p
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['sentences', 'labels'],
+        num_rows: 31
+    })
+})
+_evaluate_subset in AbsTaskClustering called
+get_vocab called!
+input: <class 'list'> of length 732723
+vocab settings: 
+ngram_range: (1, 1), 
+max_df: 1.0, 
+min_df: 1, 
+max_features: None
+vocab of lenght 354026 starting with ['small', 'perturbations', 'of', 'an', 'interface', 'for', 'elastostatic', 'problems', 'we', 'consider']
+computing tfidf features for entire dataset
+tfidf batch matrix shape(25000, 354026)
+tfidf batch matrix shape(25000, 354026)
+tfidf batch matrix shape(25000, 354026)
+tfidf batch matrix shape(25000, 354026)
+tfidf batch matrix shape(25000, 354026)
+tfidf batch matrix shape(25000, 354026)
+tfidf batch matrix shape(25000, 354026)
+tfidf batch matrix shape(25000, 354026)
+tfidf batch matrix shape(25000, 354026)
+tfidf batch matrix shape(25000, 354026)
+tfidf batch matrix shape(25000, 354026)
+tfidf batch matrix shape(25000, 354026)
+tfidf batch matrix shape(25000, 354026)
+tfidf batch matrix shape(25000, 354026)
+tfidf batch matrix shape(25000, 354026)
+tfidf batch matrix shape(25000, 354026)
+tfidf batch matrix shape(25000, 354026)
+tfidf batch matrix shape(25000, 354026)
+tfidf batch matrix shape(25000, 354026)
+tfidf batch matrix shape(25000, 354026)
+tfidf batch matrix shape(25000, 354026)
+tfidf batch matrix shape(3750, 354026)
+tfidf batch matrix shape(25000, 354026)
+tfidf batch matrix shape(22438, 354026)
+tfidf batch matrix shape(22608, 354026)
+tfidf batch matrix shape(8927, 354026)
+tfidf batch matrix shape(25000, 354026)
+tfidf batch matrix shape(25000, 354026)
+tfidf batch matrix shape(25000, 354026)
+tfidf batch matrix shape(25000, 354026)
+tfidf batch matrix shape(25000, 354026)
+tfidf matrix shape(732723, 354026)
+V not provided, fit SVD to get V
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(25000, 354026)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(25000, 354026)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(25000, 354026)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(25000, 354026)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(25000, 354026)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(25000, 354026)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(25000, 354026)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(25000, 354026)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(25000, 354026)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(25000, 354026)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(25000, 354026)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(25000, 354026)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(25000, 354026)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(25000, 354026)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(25000, 354026)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(25000, 354026)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(25000, 354026)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(25000, 354026)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(25000, 354026)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(25000, 354026)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(25000, 354026)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(3750, 354026)
+V available, perform SVD dim reduction
+dense matrix shape(3750, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(25000, 354026)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(22438, 354026)
+V available, perform SVD dim reduction
+dense matrix shape(22438, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(22608, 354026)
+V available, perform SVD dim reduction
+dense matrix shape(22608, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(8927, 354026)
+V available, perform SVD dim reduction
+dense matrix shape(8927, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(25000, 354026)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(25000, 354026)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(25000, 354026)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(25000, 354026)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(25000, 354026)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 100)
+────────────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────────
+Clustering
+    - BiorxivClusteringP2P, p2p
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['sentences', 'labels'],
+        num_rows: 10
+    })
+})
+_evaluate_subset in AbsTaskClustering called
+get_vocab called!
+input: <class 'list'> of length 75000
+vocab settings: 
+ngram_range: (1, 1), 
+max_df: 1.0, 
+min_df: 1, 
+max_features: None
+vocab of lenght 140872 starting with ['association', 'of', 'cdh11', 'with', 'asd', 'revealed', 'by', 'matched', 'gene', 'co']
+computing tfidf features for entire dataset
+tfidf batch matrix shape(10000, 140872)
+tfidf batch matrix shape(10000, 140872)
+tfidf batch matrix shape(10000, 140872)
+tfidf batch matrix shape(10000, 140872)
+tfidf batch matrix shape(10000, 140872)
+tfidf batch matrix shape(5000, 140872)
+tfidf batch matrix shape(5000, 140872)
+tfidf batch matrix shape(5000, 140872)
+tfidf batch matrix shape(5000, 140872)
+tfidf batch matrix shape(5000, 140872)
+tfidf matrix shape(75000, 140872)
+V not provided, fit SVD to get V
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(10000, 140872)
+V available, perform SVD dim reduction
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(10000, 140872)
+V available, perform SVD dim reduction
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(10000, 140872)
+V available, perform SVD dim reduction
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(10000, 140872)
+V available, perform SVD dim reduction
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(10000, 140872)
+V available, perform SVD dim reduction
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(5000, 140872)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(5000, 140872)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(5000, 140872)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(5000, 140872)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(5000, 140872)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 100)
+────────────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────────
+Clustering
+    - MedrxivClusteringP2P, p2p
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['sentences', 'labels'],
+        num_rows: 10
+    })
+})
+_evaluate_subset in AbsTaskClustering called
+get_vocab called!
+input: <class 'list'> of length 37500
+vocab settings: 
+ngram_range: (1, 1), 
+max_df: 1.0, 
+min_df: 1, 
+max_features: None
+vocab of lenght 73110 starting with ['stages', 'of', 'covid', '19', 'pandemic', 'and', 'paths', 'to', 'herd', 'immunity']
+computing tfidf features for entire dataset
+tfidf batch matrix shape(5000, 73110)
+tfidf batch matrix shape(5000, 73110)
+tfidf batch matrix shape(5000, 73110)
+tfidf batch matrix shape(5000, 73110)
+tfidf batch matrix shape(5000, 73110)
+tfidf batch matrix shape(2500, 73110)
+tfidf batch matrix shape(2500, 73110)
+tfidf batch matrix shape(2500, 73110)
+tfidf batch matrix shape(2500, 73110)
+tfidf batch matrix shape(2500, 73110)
+tfidf matrix shape(37500, 73110)
+V not provided, fit SVD to get V
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(5000, 73110)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(5000, 73110)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(5000, 73110)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(5000, 73110)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(5000, 73110)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(2500, 73110)
+V available, perform SVD dim reduction
+dense matrix shape(2500, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(2500, 73110)
+V available, perform SVD dim reduction
+dense matrix shape(2500, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(2500, 73110)
+V available, perform SVD dim reduction
+dense matrix shape(2500, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(2500, 73110)
+V available, perform SVD dim reduction
+dense matrix shape(2500, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(2500, 73110)
+V available, perform SVD dim reduction
+dense matrix shape(2500, 100)
+────────────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────────
+Clustering
+    - RedditClusteringP2P, p2p
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['sentences', 'labels'],
+        num_rows: 10
+    })
+})
+_evaluate_subset in AbsTaskClustering called
+get_vocab called!
+input: <class 'list'> of length 459399
+vocab settings: 
+ngram_range: (1, 1), 
+max_df: 1.0, 
+min_df: 1, 
+max_features: None
+vocab of lenght 320065 starting with ['wins', 'not', 'recording', 'correctly', 'got', 'in', 'solo', 'today', 'but', 'profile']
+computing tfidf features for entire dataset
+tfidf batch matrix shape(15592, 320065)
+tfidf batch matrix shape(79172, 320065)
+tfidf batch matrix shape(1942, 320065)
+tfidf batch matrix shape(13224, 320065)
+tfidf batch matrix shape(92303, 320065)
+tfidf batch matrix shape(28607, 320065)
+tfidf batch matrix shape(69146, 320065)
+tfidf batch matrix shape(67469, 320065)
+tfidf batch matrix shape(29683, 320065)
+tfidf batch matrix shape(62261, 320065)
+tfidf matrix shape(459399, 320065)
+V not provided, fit SVD to get V
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(15592, 320065)
+V available, perform SVD dim reduction
+dense matrix shape(15592, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(79172, 320065)
+V available, perform SVD dim reduction
+dense matrix shape(79172, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(1942, 320065)
+V available, perform SVD dim reduction
+dense matrix shape(1942, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(13224, 320065)
+V available, perform SVD dim reduction
+dense matrix shape(13224, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(92303, 320065)
+V available, perform SVD dim reduction
+dense matrix shape(92303, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(28607, 320065)
+V available, perform SVD dim reduction
+dense matrix shape(28607, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(69146, 320065)
+V available, perform SVD dim reduction
+dense matrix shape(69146, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(67469, 320065)
+V available, perform SVD dim reduction
+dense matrix shape(67469, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(29683, 320065)
+V available, perform SVD dim reduction
+dense matrix shape(29683, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(62261, 320065)
+V available, perform SVD dim reduction
+dense matrix shape(62261, 100)
+────────────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────────
+Clustering
+    - StackExchangeClusteringP2P, p2p
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['sentences', 'labels'],
+        num_rows: 10
+    })
+})
+_evaluate_subset in AbsTaskClustering called
+get_vocab called!
+input: <class 'list'> of length 75000
+vocab settings: 
+ngram_range: (1, 1), 
+max_df: 1.0, 
+min_df: 1, 
+max_features: None
+vocab of lenght 120133 starting with ['does', 'anyone', 'have', 'example', 'of', 'dual', 'contouring', 'in', 'trying', 'to']
+computing tfidf features for entire dataset
+tfidf batch matrix shape(10000, 120133)
+tfidf batch matrix shape(10000, 120133)
+tfidf batch matrix shape(10000, 120133)
+tfidf batch matrix shape(10000, 120133)
+tfidf batch matrix shape(10000, 120133)
+tfidf batch matrix shape(5000, 120133)
+tfidf batch matrix shape(5000, 120133)
+tfidf batch matrix shape(5000, 120133)
+tfidf batch matrix shape(5000, 120133)
+tfidf batch matrix shape(5000, 120133)
+tfidf matrix shape(75000, 120133)
+V not provided, fit SVD to get V
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(10000, 120133)
+V available, perform SVD dim reduction
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(10000, 120133)
+V available, perform SVD dim reduction
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(10000, 120133)
+V available, perform SVD dim reduction
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(10000, 120133)
+V available, perform SVD dim reduction
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(10000, 120133)
+V available, perform SVD dim reduction
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(5000, 120133)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(5000, 120133)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(5000, 120133)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(5000, 120133)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+computing tfidf features for single batch
+tfidf matrix shape(5000, 120133)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 100)
+tfidf_svd_log_novocab
+────────────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────────
+Clustering
+    - ArxivClusteringP2P, p2p
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['sentences', 'labels'],
+        num_rows: 31
+    })
+})
+_evaluate_subset in AbsTaskClustering called
+get_vocab called!
+input: <class 'list'> of length 732723
+vocab settings: 
+ngram_range: (1, 1), 
+max_df: 1.0, 
+min_df: 1, 
+max_features: None
+vocab of lenght 354026 starting with ['small', 'perturbations', 'of', 'an', 'interface', 'for', 'elastostatic', 'problems', 'we', 'consider']
+tfidf matrix shape(732723, 354026)
+dense matrix shape(732723, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 62013)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 62066)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 62001)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 62346)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 62058)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 61722)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 61992)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 62084)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 61656)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 61602)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 61831)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 61928)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 61749)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 61547)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 61952)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 62048)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 61693)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 61734)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 62403)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 61911)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 62893)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(3750, 18621)
+dense matrix shape(3750, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 44130)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(22438, 45900)
+dense matrix shape(22438, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(22608, 58691)
+dense matrix shape(22608, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(8927, 23173)
+dense matrix shape(8927, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 44344)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 52884)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 43313)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 33958)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 31079)
+dense matrix shape(25000, 100)
+────────────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────────
+Clustering
+    - BiorxivClusteringP2P, p2p
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['sentences', 'labels'],
+        num_rows: 10
+    })
+})
+_evaluate_subset in AbsTaskClustering called
+get_vocab called!
+input: <class 'list'> of length 75000
+vocab settings: 
+ngram_range: (1, 1), 
+max_df: 1.0, 
+min_df: 1, 
+max_features: None
+vocab of lenght 140872 starting with ['association', 'of', 'cdh11', 'with', 'asd', 'revealed', 'by', 'matched', 'gene', 'co']
+tfidf matrix shape(75000, 140872)
+dense matrix shape(75000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 62767)
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 62701)
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 62823)
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 63040)
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 62633)
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 43594)
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 43508)
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 43237)
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 43249)
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 43369)
+dense matrix shape(5000, 100)
+────────────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────────
+Clustering
+    - MedrxivClusteringP2P, p2p
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['sentences', 'labels'],
+        num_rows: 10
+    })
+})
+_evaluate_subset in AbsTaskClustering called
+get_vocab called!
+input: <class 'list'> of length 37500
+vocab settings: 
+ngram_range: (1, 1), 
+max_df: 1.0, 
+min_df: 1, 
+max_features: None
+vocab of lenght 73110 starting with ['stages', 'of', 'covid', '19', 'pandemic', 'and', 'paths', 'to', 'herd', 'immunity']
+tfidf matrix shape(37500, 73110)
+dense matrix shape(37500, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 38359)
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 38832)
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 38665)
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 38631)
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 38512)
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(2500, 27266)
+dense matrix shape(2500, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(2500, 27473)
+dense matrix shape(2500, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(2500, 27086)
+dense matrix shape(2500, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(2500, 27039)
+dense matrix shape(2500, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(2500, 27400)
+dense matrix shape(2500, 100)
+────────────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────────
+Clustering
+    - RedditClusteringP2P, p2p
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['sentences', 'labels'],
+        num_rows: 10
+    })
+})
+_evaluate_subset in AbsTaskClustering called
+get_vocab called!
+input: <class 'list'> of length 459399
+vocab settings: 
+ngram_range: (1, 1), 
+max_df: 1.0, 
+min_df: 1, 
+max_features: None
+vocab of lenght 320065 starting with ['wins', 'not', 'recording', 'correctly', 'got', 'in', 'solo', 'today', 'but', 'profile']
+tfidf matrix shape(459399, 320065)
+dense matrix shape(459399, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(15592, 46048)
+dense matrix shape(15592, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(79172, 126559)
+dense matrix shape(79172, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(1942, 16094)
+dense matrix shape(1942, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(13224, 34905)
+dense matrix shape(13224, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(92303, 135215)
+dense matrix shape(92303, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(28607, 64511)
+dense matrix shape(28607, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(69146, 76260)
+dense matrix shape(69146, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(67469, 84066)
+dense matrix shape(67469, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(29683, 64295)
+dense matrix shape(29683, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(62261, 82291)
+dense matrix shape(62261, 100)
+────────────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────────
+Clustering
+    - StackExchangeClusteringP2P, p2p
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['sentences', 'labels'],
+        num_rows: 10
+    })
+})
+_evaluate_subset in AbsTaskClustering called
+get_vocab called!
+input: <class 'list'> of length 75000
+vocab settings: 
+ngram_range: (1, 1), 
+max_df: 1.0, 
+min_df: 1, 
+max_features: None
+vocab of lenght 120133 starting with ['does', 'anyone', 'have', 'example', 'of', 'dual', 'contouring', 'in', 'trying', 'to']
+tfidf matrix shape(75000, 120133)
+dense matrix shape(75000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 49432)
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 48957)
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 48849)
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 48968)
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 49350)
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 31423)
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 32200)
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 31490)
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 31715)
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 31778)
+dense matrix shape(5000, 100)
+tfidf_svd_log_old
+────────────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────────
+Clustering
+    - ArxivClusteringP2P, p2p
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['sentences', 'labels'],
+        num_rows: 31
+    })
+})
+_evaluate_subset in AbsTaskClustering called
+get_vocab called!
+input: <class 'list'> of length 732723
+vocab settings: 
+ngram_range: (1, 1), 
+max_df: 1.0, 
+min_df: 1, 
+max_features: None
+vocab of lenght 354026 starting with ['small', 'perturbations', 'of', 'an', 'interface', 'for', 'elastostatic', 'problems', 'we', 'consider']
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(3750, 354026)
+dense matrix shape(3750, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(22438, 354026)
+dense matrix shape(22438, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(22608, 354026)
+dense matrix shape(22608, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(8927, 354026)
+dense matrix shape(8927, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 100)
+────────────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────────
+Clustering
+    - BiorxivClusteringP2P, p2p
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['sentences', 'labels'],
+        num_rows: 10
+    })
+})
+_evaluate_subset in AbsTaskClustering called
+get_vocab called!
+input: <class 'list'> of length 75000
+vocab settings: 
+ngram_range: (1, 1), 
+max_df: 1.0, 
+min_df: 1, 
+max_features: None
+vocab of lenght 140872 starting with ['association', 'of', 'cdh11', 'with', 'asd', 'revealed', 'by', 'matched', 'gene', 'co']
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 140872)
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 140872)
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 140872)
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 140872)
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 140872)
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 140872)
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 140872)
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 140872)
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 140872)
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 140872)
+dense matrix shape(5000, 100)
+────────────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────────
+Clustering
+    - MedrxivClusteringP2P, p2p
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['sentences', 'labels'],
+        num_rows: 10
+    })
+})
+_evaluate_subset in AbsTaskClustering called
+get_vocab called!
+input: <class 'list'> of length 37500
+vocab settings: 
+ngram_range: (1, 1), 
+max_df: 1.0, 
+min_df: 1, 
+max_features: None
+vocab of lenght 73110 starting with ['stages', 'of', 'covid', '19', 'pandemic', 'and', 'paths', 'to', 'herd', 'immunity']
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 73110)
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 73110)
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 73110)
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 73110)
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 73110)
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(2500, 73110)
+dense matrix shape(2500, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(2500, 73110)
+dense matrix shape(2500, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(2500, 73110)
+dense matrix shape(2500, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(2500, 73110)
+dense matrix shape(2500, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(2500, 73110)
+dense matrix shape(2500, 100)
+────────────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────────
+Clustering
+    - RedditClusteringP2P, p2p
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['sentences', 'labels'],
+        num_rows: 10
+    })
+})
+_evaluate_subset in AbsTaskClustering called
+get_vocab called!
+input: <class 'list'> of length 459399
+vocab settings: 
+ngram_range: (1, 1), 
+max_df: 1.0, 
+min_df: 1, 
+max_features: None
+vocab of lenght 320065 starting with ['wins', 'not', 'recording', 'correctly', 'got', 'in', 'solo', 'today', 'but', 'profile']
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(15592, 320065)
+dense matrix shape(15592, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(79172, 320065)
+dense matrix shape(79172, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(1942, 320065)
+dense matrix shape(1942, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(13224, 320065)
+dense matrix shape(13224, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(92303, 320065)
+dense matrix shape(92303, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(28607, 320065)
+dense matrix shape(28607, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(69146, 320065)
+dense matrix shape(69146, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(67469, 320065)
+dense matrix shape(67469, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(29683, 320065)
+dense matrix shape(29683, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(62261, 320065)
+dense matrix shape(62261, 100)
+────────────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────────
+Clustering
+    - StackExchangeClusteringP2P, p2p
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['sentences', 'labels'],
+        num_rows: 10
+    })
+})
+_evaluate_subset in AbsTaskClustering called
+get_vocab called!
+input: <class 'list'> of length 75000
+vocab settings: 
+ngram_range: (1, 1), 
+max_df: 1.0, 
+min_df: 1, 
+max_features: None
+vocab of lenght 120133 starting with ['does', 'anyone', 'have', 'example', 'of', 'dual', 'contouring', 'in', 'trying', 'to']
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 120133)
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 120133)
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 120133)
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 120133)
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 120133)
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 120133)
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 120133)
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 120133)
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 120133)
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 120133)
+dense matrix shape(5000, 100)
+tfidf_rnd100_log
+────────────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────────
+Retrieval
+    - ArguAna, s2p
+
+
+AbsTaskRetrieval.evaluate called
+get_vocab called!
+input: <class 'list'> of length 10080
+vocab settings: 
+ngram_range: (1, 1), 
+max_df: 1.0, 
+min_df: 1, 
+max_features: None
+vocab of lenght 34293 starting with ['animals', 'environment', 'general', 'health', 'weight', 'philosophy', 'ethics', 'you', 'don', 'have']
+tfidf matrix shape(1406, 34293)
+dense matrix shape(1406, 100)
+tfidf matrix shape(8674, 34293)
+dense matrix shape(8674, 100)
+────────────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────────
+Clustering
+    - ArxivClusteringP2P, p2p
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['sentences', 'labels'],
+        num_rows: 31
+    })
+})
+_evaluate_subset in AbsTaskClustering called
+get_vocab called!
+input: <class 'list'> of length 732723
+vocab settings: 
+ngram_range: (1, 1), 
+max_df: 1.0, 
+min_df: 1, 
+max_features: None
+vocab of lenght 354026 starting with ['small', 'perturbations', 'of', 'an', 'interface', 'for', 'elastostatic', 'problems', 'we', 'consider']
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(3750, 354026)
+dense matrix shape(3750, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(22438, 354026)
+dense matrix shape(22438, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(22608, 354026)
+dense matrix shape(22608, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(8927, 354026)
+dense matrix shape(8927, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 100)
+────────────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────────
+Clustering
+    - BiorxivClusteringP2P, p2p
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['sentences', 'labels'],
+        num_rows: 10
+    })
+})
+_evaluate_subset in AbsTaskClustering called
+get_vocab called!
+input: <class 'list'> of length 75000
+vocab settings: 
+ngram_range: (1, 1), 
+max_df: 1.0, 
+min_df: 1, 
+max_features: None
+vocab of lenght 140872 starting with ['association', 'of', 'cdh11', 'with', 'asd', 'revealed', 'by', 'matched', 'gene', 'co']
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 140872)
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 140872)
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 140872)
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 140872)
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 140872)
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 140872)
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 140872)
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 140872)
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 140872)
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 140872)
+dense matrix shape(5000, 100)
+────────────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────────
+Clustering
+    - MedrxivClusteringP2P, p2p
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['sentences', 'labels'],
+        num_rows: 10
+    })
+})
+_evaluate_subset in AbsTaskClustering called
+get_vocab called!
+input: <class 'list'> of length 37500
+vocab settings: 
+ngram_range: (1, 1), 
+max_df: 1.0, 
+min_df: 1, 
+max_features: None
+vocab of lenght 73110 starting with ['stages', 'of', 'covid', '19', 'pandemic', 'and', 'paths', 'to', 'herd', 'immunity']
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 73110)
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 73110)
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 73110)
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 73110)
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 73110)
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(2500, 73110)
+dense matrix shape(2500, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(2500, 73110)
+dense matrix shape(2500, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(2500, 73110)
+dense matrix shape(2500, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(2500, 73110)
+dense matrix shape(2500, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(2500, 73110)
+dense matrix shape(2500, 100)
+────────────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────────
+Reranking
+    - MindSmallReranking, s2s
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    train: Dataset({
+        features: ['id', 'query', 'positive', 'negative'],
+        num_rows: 153727
+    })
+    test: Dataset({
+        features: ['id', 'query', 'positive', 'negative'],
+        num_rows: 70938
+    })
+})
+evaluate subset called in abstaskreranking
+get_vocab called!
+input: <class 'list'> of length 5020605
+vocab settings: 
+ngram_range: (1, 1), 
+max_df: 1.0, 
+min_df: 1, 
+max_features: None
+vocab of lenght 28550 starting with ['wheel', 'of', 'fortune', 'guest', 'delivers', 'hilarious', 'off', 'the', 'rails', 'introduction']
+tfidf matrix shape(37162, 28550)
+dense matrix shape(37162, 100)
+tfidf matrix shape(5277, 28550)
+dense matrix shape(5277, 100)
+────────────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────────
+Clustering
+    - RedditClusteringP2P, p2p
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['sentences', 'labels'],
+        num_rows: 10
+    })
+})
+_evaluate_subset in AbsTaskClustering called
+get_vocab called!
+input: <class 'list'> of length 459399
+vocab settings: 
+ngram_range: (1, 1), 
+max_df: 1.0, 
+min_df: 1, 
+max_features: None
+vocab of lenght 320065 starting with ['wins', 'not', 'recording', 'correctly', 'got', 'in', 'solo', 'today', 'but', 'profile']
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(15592, 320065)
+dense matrix shape(15592, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(79172, 320065)
+dense matrix shape(79172, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(1942, 320065)
+dense matrix shape(1942, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(13224, 320065)
+dense matrix shape(13224, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(92303, 320065)
+dense matrix shape(92303, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(28607, 320065)
+dense matrix shape(28607, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(69146, 320065)
+dense matrix shape(69146, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(67469, 320065)
+dense matrix shape(67469, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(29683, 320065)
+dense matrix shape(29683, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(62261, 320065)
+dense matrix shape(62261, 100)
+────────────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────────
+Retrieval
+    - SCIDOCS, s2p
+
+
+AbsTaskRetrieval.evaluate called
+get_vocab called!
+input: <class 'list'> of length 26657
+vocab settings: 
+ngram_range: (1, 1), 
+max_df: 1.0, 
+min_df: 1, 
+max_features: None
+vocab of lenght 78426 starting with ['hybrid', 'of', 'genetic', 'algorithm', 'and', 'particle', 'swarm', 'optimization', 'for', 'recurrent']
+tfidf matrix shape(1000, 78426)
+dense matrix shape(1000, 100)
+tfidf matrix shape(25657, 78426)
+dense matrix shape(25657, 100)
+────────────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────────
+Reranking
+    - SciDocsRR, s2s
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    validation: Dataset({
+        features: ['query', 'positive', 'negative'],
+        num_rows: 3981
+    })
+    test: Dataset({
+        features: ['query', 'positive', 'negative'],
+        num_rows: 3978
+    })
+})
+evaluate subset called in abstaskreranking
+get_vocab called!
+input: <class 'list'> of length 396561
+vocab settings: 
+ngram_range: (1, 1), 
+max_df: 1.0, 
+min_df: 1, 
+max_features: None
+vocab of lenght 40089 starting with ['modified', 'particle', 'swarm', 'optimizer', 'hybrid', 'of', 'genetic', 'algorithm', 'and', 'optimization']
+tfidf matrix shape(3978, 40089)
+dense matrix shape(3978, 100)
+tfidf matrix shape(85153, 40089)
+dense matrix shape(85153, 100)
+────────────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────────
+Clustering
+    - StackExchangeClusteringP2P, p2p
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['sentences', 'labels'],
+        num_rows: 10
+    })
+})
+_evaluate_subset in AbsTaskClustering called
+get_vocab called!
+input: <class 'list'> of length 75000
+vocab settings: 
+ngram_range: (1, 1), 
+max_df: 1.0, 
+min_df: 1, 
+max_features: None
+vocab of lenght 120133 starting with ['does', 'anyone', 'have', 'example', 'of', 'dual', 'contouring', 'in', 'trying', 'to']
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 120133)
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 120133)
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 120133)
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 120133)
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 120133)
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 120133)
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 120133)
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 120133)
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 120133)
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 120133)
+dense matrix shape(5000, 100)
+────────────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────────
+STS
+    - STS15, s2s
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['split', 'sentence1', 'sentence2', 'score'],
+        num_rows: 3000
+    })
+})
+get_vocab called!
+input: <class 'list'> of length 6000
+vocab settings: 
+ngram_range: (1, 1), 
+max_df: 1.0, 
+min_df: 1, 
+max_features: None
+vocab of lenght 7064 starting with ['you', 'll', 'need', 'to', 'check', 'the', 'particular', 'policies', 'of', 'each']
+tfidf matrix shape(3000, 7064)
+dense matrix shape(3000, 100)
+tfidf matrix shape(3000, 7064)
+dense matrix shape(3000, 100)
+────────────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────────
+STS
+    - STS16, s2s
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['split', 'sentence1', 'sentence2', 'score'],
+        num_rows: 1186
+    })
+})
+get_vocab called!
+input: <class 'list'> of length 2372
+vocab settings: 
+ngram_range: (1, 1), 
+max_df: 1.0, 
+min_df: 1, 
+max_features: None
+vocab of lenght 3878 starting with ['remained', 'under', 'the', 'banyan', 'tree', 'exhausted', 'by', 'my', 'daily', 'ritual']
+tfidf matrix shape(1186, 3878)
+dense matrix shape(1186, 100)
+tfidf matrix shape(1186, 3878)
+dense matrix shape(1186, 100)
+────────────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────────
+STS
+    - STSBenchmark, s2s
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    train: Dataset({
+        features: ['split', 'genre', 'dataset', 'year', 'sid', 'score', 'sentence1', 'sentence2'],
+        num_rows: 5749
+    })
+    validation: Dataset({
+        features: ['split', 'genre', 'dataset', 'year', 'sid', 'score', 'sentence1', 'sentence2'],
+        num_rows: 1500
+    })
+    test: Dataset({
+        features: ['split', 'genre', 'dataset', 'year', 'sid', 'score', 'sentence1', 'sentence2'],
+        num_rows: 1379
+    })
+})
+get_vocab called!
+input: <class 'list'> of length 2758
+vocab settings: 
+ngram_range: (1, 1), 
+max_df: 1.0, 
+min_df: 1, 
+max_features: None
+vocab of lenght 4665 starting with ['girl', 'is', 'styling', 'her', 'hair', 'group', 'of', 'men', 'play', 'soccer']
+tfidf matrix shape(1379, 4665)
+dense matrix shape(1379, 100)
+tfidf matrix shape(1379, 4665)
+dense matrix shape(1379, 100)
+tfidf_rnd768_log
+────────────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────────
+Retrieval
+    - ArguAna, s2p
+
+
+AbsTaskRetrieval.evaluate called
+get_vocab called!
+input: <class 'list'> of length 10080
+vocab settings: 
+ngram_range: (1, 1), 
+max_df: 1.0, 
+min_df: 1, 
+max_features: None
+vocab of lenght 34293 starting with ['animals', 'environment', 'general', 'health', 'weight', 'philosophy', 'ethics', 'you', 'don', 'have']
+tfidf matrix shape(1406, 34293)
+dense matrix shape(1406, 768)
+tfidf matrix shape(8674, 34293)
+dense matrix shape(8674, 768)
+────────────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────────
+Clustering
+    - ArxivClusteringP2P, p2p
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['sentences', 'labels'],
+        num_rows: 31
+    })
+})
+_evaluate_subset in AbsTaskClustering called
+get_vocab called!
+input: <class 'list'> of length 732723
+vocab settings: 
+ngram_range: (1, 1), 
+max_df: 1.0, 
+min_df: 1, 
+max_features: None
+vocab of lenght 354026 starting with ['small', 'perturbations', 'of', 'an', 'interface', 'for', 'elastostatic', 'problems', 'we', 'consider']
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(3750, 354026)
+dense matrix shape(3750, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(22438, 354026)
+dense matrix shape(22438, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(22608, 354026)
+dense matrix shape(22608, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(8927, 354026)
+dense matrix shape(8927, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 354026)
+dense matrix shape(25000, 768)
+────────────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────────
+Clustering
+    - BiorxivClusteringP2P, p2p
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['sentences', 'labels'],
+        num_rows: 10
+    })
+})
+_evaluate_subset in AbsTaskClustering called
+get_vocab called!
+input: <class 'list'> of length 75000
+vocab settings: 
+ngram_range: (1, 1), 
+max_df: 1.0, 
+min_df: 1, 
+max_features: None
+vocab of lenght 140872 starting with ['association', 'of', 'cdh11', 'with', 'asd', 'revealed', 'by', 'matched', 'gene', 'co']
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 140872)
+dense matrix shape(10000, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 140872)
+dense matrix shape(10000, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 140872)
+dense matrix shape(10000, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 140872)
+dense matrix shape(10000, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 140872)
+dense matrix shape(10000, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 140872)
+dense matrix shape(5000, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 140872)
+dense matrix shape(5000, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 140872)
+dense matrix shape(5000, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 140872)
+dense matrix shape(5000, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 140872)
+dense matrix shape(5000, 768)
+────────────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────────
+Clustering
+    - MedrxivClusteringP2P, p2p
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['sentences', 'labels'],
+        num_rows: 10
+    })
+})
+_evaluate_subset in AbsTaskClustering called
+get_vocab called!
+input: <class 'list'> of length 37500
+vocab settings: 
+ngram_range: (1, 1), 
+max_df: 1.0, 
+min_df: 1, 
+max_features: None
+vocab of lenght 73110 starting with ['stages', 'of', 'covid', '19', 'pandemic', 'and', 'paths', 'to', 'herd', 'immunity']
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 73110)
+dense matrix shape(5000, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 73110)
+dense matrix shape(5000, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 73110)
+dense matrix shape(5000, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 73110)
+dense matrix shape(5000, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 73110)
+dense matrix shape(5000, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(2500, 73110)
+dense matrix shape(2500, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(2500, 73110)
+dense matrix shape(2500, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(2500, 73110)
+dense matrix shape(2500, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(2500, 73110)
+dense matrix shape(2500, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(2500, 73110)
+dense matrix shape(2500, 768)
+────────────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────────
+Reranking
+    - MindSmallReranking, s2s
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    train: Dataset({
+        features: ['id', 'query', 'positive', 'negative'],
+        num_rows: 153727
+    })
+    test: Dataset({
+        features: ['id', 'query', 'positive', 'negative'],
+        num_rows: 70938
+    })
+})
+evaluate subset called in abstaskreranking
+get_vocab called!
+input: <class 'list'> of length 5020605
+vocab settings: 
+ngram_range: (1, 1), 
+max_df: 1.0, 
+min_df: 1, 
+max_features: None
+vocab of lenght 28550 starting with ['wheel', 'of', 'fortune', 'guest', 'delivers', 'hilarious', 'off', 'the', 'rails', 'introduction']
+tfidf matrix shape(37162, 28550)
+dense matrix shape(37162, 768)
+tfidf matrix shape(5277, 28550)
+dense matrix shape(5277, 768)
+────────────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────────
+Clustering
+    - RedditClusteringP2P, p2p
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['sentences', 'labels'],
+        num_rows: 10
+    })
+})
+_evaluate_subset in AbsTaskClustering called
+get_vocab called!
+input: <class 'list'> of length 459399
+vocab settings: 
+ngram_range: (1, 1), 
+max_df: 1.0, 
+min_df: 1, 
+max_features: None
+vocab of lenght 320065 starting with ['wins', 'not', 'recording', 'correctly', 'got', 'in', 'solo', 'today', 'but', 'profile']
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(15592, 320065)
+dense matrix shape(15592, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(79172, 320065)
+dense matrix shape(79172, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(1942, 320065)
+dense matrix shape(1942, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(13224, 320065)
+dense matrix shape(13224, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(92303, 320065)
+dense matrix shape(92303, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(28607, 320065)
+dense matrix shape(28607, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(69146, 320065)
+dense matrix shape(69146, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(67469, 320065)
+dense matrix shape(67469, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(29683, 320065)
+dense matrix shape(29683, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(62261, 320065)
+dense matrix shape(62261, 768)
+────────────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────────
+Retrieval
+    - SCIDOCS, s2p
+
+
+AbsTaskRetrieval.evaluate called
+get_vocab called!
+input: <class 'list'> of length 26657
+vocab settings: 
+ngram_range: (1, 1), 
+max_df: 1.0, 
+min_df: 1, 
+max_features: None
+vocab of lenght 78426 starting with ['hybrid', 'of', 'genetic', 'algorithm', 'and', 'particle', 'swarm', 'optimization', 'for', 'recurrent']
+tfidf matrix shape(1000, 78426)
+dense matrix shape(1000, 768)
+tfidf matrix shape(25657, 78426)
+dense matrix shape(25657, 768)
+────────────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────────
+Reranking
+    - SciDocsRR, s2s
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    validation: Dataset({
+        features: ['query', 'positive', 'negative'],
+        num_rows: 3981
+    })
+    test: Dataset({
+        features: ['query', 'positive', 'negative'],
+        num_rows: 3978
+    })
+})
+evaluate subset called in abstaskreranking
+get_vocab called!
+input: <class 'list'> of length 396561
+vocab settings: 
+ngram_range: (1, 1), 
+max_df: 1.0, 
+min_df: 1, 
+max_features: None
+vocab of lenght 40089 starting with ['modified', 'particle', 'swarm', 'optimizer', 'hybrid', 'of', 'genetic', 'algorithm', 'and', 'optimization']
+tfidf matrix shape(3978, 40089)
+dense matrix shape(3978, 768)
+tfidf matrix shape(85153, 40089)
+dense matrix shape(85153, 768)
+────────────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────────
+Clustering
+    - StackExchangeClusteringP2P, p2p
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['sentences', 'labels'],
+        num_rows: 10
+    })
+})
+_evaluate_subset in AbsTaskClustering called
+get_vocab called!
+input: <class 'list'> of length 75000
+vocab settings: 
+ngram_range: (1, 1), 
+max_df: 1.0, 
+min_df: 1, 
+max_features: None
+vocab of lenght 120133 starting with ['does', 'anyone', 'have', 'example', 'of', 'dual', 'contouring', 'in', 'trying', 'to']
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 120133)
+dense matrix shape(10000, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 120133)
+dense matrix shape(10000, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 120133)
+dense matrix shape(10000, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 120133)
+dense matrix shape(10000, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 120133)
+dense matrix shape(10000, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 120133)
+dense matrix shape(5000, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 120133)
+dense matrix shape(5000, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 120133)
+dense matrix shape(5000, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 120133)
+dense matrix shape(5000, 768)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 120133)
+dense matrix shape(5000, 768)
+────────────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────────
+STS
+    - STS15, s2s
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['split', 'sentence1', 'sentence2', 'score'],
+        num_rows: 3000
+    })
+})
+get_vocab called!
+input: <class 'list'> of length 6000
+vocab settings: 
+ngram_range: (1, 1), 
+max_df: 1.0, 
+min_df: 1, 
+max_features: None
+vocab of lenght 7064 starting with ['you', 'll', 'need', 'to', 'check', 'the', 'particular', 'policies', 'of', 'each']
+tfidf matrix shape(3000, 7064)
+dense matrix shape(3000, 768)
+tfidf matrix shape(3000, 7064)
+dense matrix shape(3000, 768)
+────────────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────────
+STS
+    - STS16, s2s
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['split', 'sentence1', 'sentence2', 'score'],
+        num_rows: 1186
+    })
+})
+get_vocab called!
+input: <class 'list'> of length 2372
+vocab settings: 
+ngram_range: (1, 1), 
+max_df: 1.0, 
+min_df: 1, 
+max_features: None
+vocab of lenght 3878 starting with ['remained', 'under', 'the', 'banyan', 'tree', 'exhausted', 'by', 'my', 'daily', 'ritual']
+tfidf matrix shape(1186, 3878)
+dense matrix shape(1186, 768)
+tfidf matrix shape(1186, 3878)
+dense matrix shape(1186, 768)
+────────────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────────
+STS
+    - STSBenchmark, s2s
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    train: Dataset({
+        features: ['split', 'genre', 'dataset', 'year', 'sid', 'score', 'sentence1', 'sentence2'],
+        num_rows: 5749
+    })
+    validation: Dataset({
+        features: ['split', 'genre', 'dataset', 'year', 'sid', 'score', 'sentence1', 'sentence2'],
+        num_rows: 1500
+    })
+    test: Dataset({
+        features: ['split', 'genre', 'dataset', 'year', 'sid', 'score', 'sentence1', 'sentence2'],
+        num_rows: 1379
+    })
+})
+get_vocab called!
+input: <class 'list'> of length 2758
+vocab settings: 
+ngram_range: (1, 1), 
+max_df: 1.0, 
+min_df: 1, 
+max_features: None
+vocab of lenght 4665 starting with ['girl', 'is', 'styling', 'her', 'hair', 'group', 'of', 'men', 'play', 'soccer']
+tfidf matrix shape(1379, 4665)
+dense matrix shape(1379, 768)
+tfidf matrix shape(1379, 4665)
+dense matrix shape(1379, 768)
