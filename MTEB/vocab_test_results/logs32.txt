@@ -1,0 +1,1239 @@
+───────────────────────────────────────── Selected tasks  ──────────────────────────────────────────
+Retrieval
+    - ArguAna, s2p
+
+
+───────────────────────────────────────── Selected tasks  ──────────────────────────────────────────
+Clustering
+    - ArxivClusteringP2P, p2p
+
+
+───────────────────────────────────────── Selected tasks  ──────────────────────────────────────────
+Clustering
+    - BiorxivClusteringP2P, p2p
+
+
+───────────────────────────────────────── Selected tasks  ──────────────────────────────────────────
+Clustering
+    - MedrxivClusteringP2P, p2p
+
+
+───────────────────────────────────────── Selected tasks  ──────────────────────────────────────────
+Reranking
+    - MindSmallReranking, s2s
+
+
+───────────────────────────────────────── Selected tasks  ──────────────────────────────────────────
+Clustering
+    - RedditClusteringP2P, p2p
+
+
+───────────────────────────────────────── Selected tasks  ──────────────────────────────────────────
+Retrieval
+    - SCIDOCS, s2p
+
+
+───────────────────────────────────────── Selected tasks  ──────────────────────────────────────────
+Reranking
+    - SciDocsRR, s2s
+
+
+───────────────────────────────────────── Selected tasks  ──────────────────────────────────────────
+Clustering
+    - StackExchangeClusteringP2P, p2p
+
+
+───────────────────────────────────────── Selected tasks  ──────────────────────────────────────────
+STS
+    - STS15, s2s
+
+
+───────────────────────────────────────── Selected tasks  ──────────────────────────────────────────
+STS
+    - STS16, s2s
+
+
+───────────────────────────────────────── Selected tasks  ──────────────────────────────────────────
+STS
+    - STSBenchmark, s2s
+
+
+───────────────────────────────────────── Selected tasks  ──────────────────────────────────────────
+Retrieval
+    - ArguAna, s2p
+
+
+───────────────────────────────────────── Selected tasks  ──────────────────────────────────────────
+Clustering
+    - ArxivClusteringP2P, p2p
+
+
+───────────────────────────────────────── Selected tasks  ──────────────────────────────────────────
+Clustering
+    - BiorxivClusteringP2P, p2p
+
+
+───────────────────────────────────────── Selected tasks  ──────────────────────────────────────────
+Clustering
+    - MedrxivClusteringP2P, p2p
+
+
+───────────────────────────────────────── Selected tasks  ──────────────────────────────────────────
+Reranking
+    - MindSmallReranking, s2s
+
+
+───────────────────────────────────────── Selected tasks  ──────────────────────────────────────────
+Clustering
+    - RedditClusteringP2P, p2p
+
+
+───────────────────────────────────────── Selected tasks  ──────────────────────────────────────────
+Retrieval
+    - SCIDOCS, s2p
+
+
+───────────────────────────────────────── Selected tasks  ──────────────────────────────────────────
+Reranking
+    - SciDocsRR, s2s
+
+
+───────────────────────────────────────── Selected tasks  ──────────────────────────────────────────
+Clustering
+    - StackExchangeClusteringP2P, p2p
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['sentences', 'labels'],
+        num_rows: 10
+    })
+})
+_evaluate_subset in AbsTaskClustering called
+get_vocab called!
+input: <class 'list'> of length 75000
+vocab settings: 
+ngram_range: (2, 2), 
+max_df: 0.1, 
+min_df: 0.01, 
+max_features: None
+vocab of lenght 968 starting with ['does anyone', 'anyone have', 'example of', 'to develop', 'them to', 'but not', 've been', 'been trying', 'to create', 'and also']
+tfidf matrix shape(75000, 968)
+V not provided, fit SVD to get V
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 968)
+V available, perform SVD dim reduction
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 968)
+V available, perform SVD dim reduction
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 968)
+V available, perform SVD dim reduction
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 968)
+V available, perform SVD dim reduction
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 968)
+V available, perform SVD dim reduction
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 968)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 968)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 968)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 968)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 968)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 100)
+───────────────────────────────────────── Selected tasks  ──────────────────────────────────────────
+STS
+    - STS15, s2s
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['split', 'sentence1', 'sentence2', 'score'],
+        num_rows: 3000
+    })
+})
+get_vocab called!
+input: <class 'list'> of length 6000
+vocab settings: 
+ngram_range: (2, 2), 
+max_df: 0.1, 
+min_df: 0.01, 
+max_features: None
+vocab of lenght 63 starting with ['is not', 'there is', 'it is', 'to the', 'and the', 'of the', 'the same', 'the bulb', 'with the', 'on the']
+tfidf matrix shape(6000, 63)
+vocab of length 63 too small to perform svd reduction
+tfidf matrix shape(3000, 63)
+vocab of length 63 too small to perform svd reduction
+tfidf matrix shape(3000, 63)
+vocab of length 63 too small to perform svd reduction
+───────────────────────────────────────── Selected tasks  ──────────────────────────────────────────
+STS
+    - STS16, s2s
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['split', 'sentence1', 'sentence2', 'score'],
+        num_rows: 1186
+    })
+})
+get_vocab called!
+input: <class 'list'> of length 2372
+vocab settings: 
+ngram_range: (2, 2), 
+max_df: 0.1, 
+min_df: 0.01, 
+max_features: None
+vocab of lenght 56 starting with ['in the', 'on the', 'have to', 'on what', 'what you', 'you do', 'which is', 'you want', 'do not', 'need to']
+tfidf matrix shape(2372, 56)
+vocab of length 56 too small to perform svd reduction
+tfidf matrix shape(1186, 56)
+vocab of length 56 too small to perform svd reduction
+tfidf matrix shape(1186, 56)
+vocab of length 56 too small to perform svd reduction
+───────────────────────────────────────── Selected tasks  ──────────────────────────────────────────
+STS
+    - STSBenchmark, s2s
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    train: Dataset({
+        features: ['split', 'genre', 'dataset', 'year', 'sid', 'score', 'sentence1', 'sentence2'],
+        num_rows: 5749
+    })
+    validation: Dataset({
+        features: ['split', 'genre', 'dataset', 'year', 'sid', 'score', 'sentence1', 'sentence2'],
+        num_rows: 1500
+    })
+    test: Dataset({
+        features: ['split', 'genre', 'dataset', 'year', 'sid', 'score', 'sentence1', 'sentence2'],
+        num_rows: 1379
+    })
+})
+get_vocab called!
+input: <class 'list'> of length 2758
+vocab settings: 
+ngram_range: (2, 2), 
+max_df: 0.1, 
+min_df: 0.01, 
+max_features: None
+vocab of lenght 32 starting with ['group of', 'on the', 'woman is', 'man is', 'is cutting', 'is playing', 'is slicing', 'in the', 'person is', 'of the']
+tfidf matrix shape(2758, 32)
+vocab of length 32 too small to perform svd reduction
+tfidf matrix shape(1379, 32)
+vocab of length 32 too small to perform svd reduction
+tfidf matrix shape(1379, 32)
+vocab of length 32 too small to perform svd reduction
+───────────────────────────────────────── Selected tasks  ──────────────────────────────────────────
+Retrieval
+    - ArguAna, s2p
+
+
+AbsTaskRetrieval.evaluate called
+get_vocab called!
+input: <class 'list'> of length 10080
+vocab settings: 
+ngram_range: (2, 2), 
+max_df: 0.1, 
+min_df: 0.02, 
+max_features: None
+vocab of lenght 361 starting with ['have to', 'in many', 'also be', 'not to', 'to create', 'rather than', 'between the', 'used to', 'which is', 'the case']
+tfidf matrix shape(10080, 361)
+V not provided, fit SVD to get V
+tfidf matrix shape(1406, 361)
+V available, perform SVD dim reduction
+dense matrix shape(1406, 100)
+tfidf matrix shape(8674, 361)
+V available, perform SVD dim reduction
+dense matrix shape(8674, 100)
+───────────────────────────────────────── Selected tasks  ──────────────────────────────────────────
+Clustering
+    - ArxivClusteringP2P, p2p
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['sentences', 'labels'],
+        num_rows: 31
+    })
+})
+_evaluate_subset in AbsTaskClustering called
+get_vocab called!
+input: <class 'list'> of length 732723
+vocab settings: 
+ngram_range: (2, 2), 
+max_df: 0.1, 
+min_df: 0.02, 
+max_features: None
+vocab of lenght 259 starting with ['of an', 'we consider', 'in two', 'by using', 'due to', 'the presence', 'presence of', 'have been', 'the first', 'than the']
+tfidf matrix shape(732723, 259)
+V not provided, fit SVD to get V
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 259)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 259)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 259)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 259)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 259)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 259)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 259)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 259)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 259)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 259)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 259)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 259)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 259)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 259)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 259)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 259)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 259)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 259)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 259)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 259)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 259)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(3750, 259)
+V available, perform SVD dim reduction
+dense matrix shape(3750, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 259)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(22438, 259)
+V available, perform SVD dim reduction
+dense matrix shape(22438, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(22608, 259)
+V available, perform SVD dim reduction
+dense matrix shape(22608, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(8927, 259)
+V available, perform SVD dim reduction
+dense matrix shape(8927, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 259)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 259)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 259)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 259)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 259)
+V available, perform SVD dim reduction
+dense matrix shape(25000, 100)
+───────────────────────────────────────── Selected tasks  ──────────────────────────────────────────
+Clustering
+    - BiorxivClusteringP2P, p2p
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['sentences', 'labels'],
+        num_rows: 10
+    })
+})
+_evaluate_subset in AbsTaskClustering called
+get_vocab called!
+input: <class 'list'> of length 75000
+vocab settings: 
+ngram_range: (2, 2), 
+max_df: 0.1, 
+min_df: 0.02, 
+max_features: None
+vocab of lenght 452 starting with ['analysis and', 'number of', 'genes in', 'relationship between', 'has not', 'not been', 'of this', 'to predict', 'whole genome', 'of gene']
+tfidf matrix shape(75000, 452)
+V not provided, fit SVD to get V
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 452)
+V available, perform SVD dim reduction
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 452)
+V available, perform SVD dim reduction
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 452)
+V available, perform SVD dim reduction
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 452)
+V available, perform SVD dim reduction
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 452)
+V available, perform SVD dim reduction
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 452)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 452)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 452)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 452)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 452)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 100)
+───────────────────────────────────────── Selected tasks  ──────────────────────────────────────────
+Clustering
+    - MedrxivClusteringP2P, p2p
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['sentences', 'labels'],
+        num_rows: 10
+    })
+})
+_evaluate_subset in AbsTaskClustering called
+get_vocab called!
+input: <class 'list'> of length 37500
+vocab settings: 
+ngram_range: (2, 2), 
+max_df: 0.1, 
+min_df: 0.02, 
+max_features: None
+vocab of lenght 707 starting with ['pandemic and', 'more than', 'with sars', 'december 2020', 'to reduce', 'reduce the', 'the spread', 'spread of', 'cov and', 'and to']
+tfidf matrix shape(37500, 707)
+V not provided, fit SVD to get V
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 707)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 707)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 707)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 707)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 707)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(2500, 707)
+V available, perform SVD dim reduction
+dense matrix shape(2500, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(2500, 707)
+V available, perform SVD dim reduction
+dense matrix shape(2500, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(2500, 707)
+V available, perform SVD dim reduction
+dense matrix shape(2500, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(2500, 707)
+V available, perform SVD dim reduction
+dense matrix shape(2500, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(2500, 707)
+V available, perform SVD dim reduction
+dense matrix shape(2500, 100)
+───────────────────────────────────────── Selected tasks  ──────────────────────────────────────────
+Reranking
+    - MindSmallReranking, s2s
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    train: Dataset({
+        features: ['id', 'query', 'positive', 'negative'],
+        num_rows: 153727
+    })
+    test: Dataset({
+        features: ['id', 'query', 'positive', 'negative'],
+        num_rows: 70938
+    })
+})
+evaluate subset called in abstaskreranking
+get_vocab called!
+input: <class 'list'> of length 5020605
+vocab settings: 
+ngram_range: (2, 2), 
+max_df: 0.1, 
+min_df: 0.02, 
+max_features: None
+vocab of lenght 2 starting with ['of the', 'in the']
+tfidf matrix shape(5020605, 2)
+vocab of length 2 too small to perform svd reduction
+tfidf matrix shape(37162, 2)
+vocab of length 2 too small to perform svd reduction
+tfidf matrix shape(5277, 2)
+vocab of length 2 too small to perform svd reduction
+───────────────────────────────────────── Selected tasks  ──────────────────────────────────────────
+Clustering
+    - RedditClusteringP2P, p2p
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['sentences', 'labels'],
+        num_rows: 10
+    })
+})
+_evaluate_subset in AbsTaskClustering called
+get_vocab called!
+input: <class 'list'> of length 459399
+vocab settings: 
+ngram_range: (2, 2), 
+max_df: 0.1, 
+min_df: 0.02, 
+max_features: None
+vocab of lenght 271 starting with ['and have', 'anyone else', 'amp x200b', 'you re', 'to start', 'wanted to', 'the last', 'of my', 'my life', 'the way']
+tfidf matrix shape(459399, 271)
+V not provided, fit SVD to get V
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(15592, 271)
+V available, perform SVD dim reduction
+dense matrix shape(15592, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(79172, 271)
+V available, perform SVD dim reduction
+dense matrix shape(79172, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(1942, 271)
+V available, perform SVD dim reduction
+dense matrix shape(1942, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(13224, 271)
+V available, perform SVD dim reduction
+dense matrix shape(13224, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(92303, 271)
+V available, perform SVD dim reduction
+dense matrix shape(92303, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(28607, 271)
+V available, perform SVD dim reduction
+dense matrix shape(28607, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(69146, 271)
+V available, perform SVD dim reduction
+dense matrix shape(69146, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(67469, 271)
+V available, perform SVD dim reduction
+dense matrix shape(67469, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(29683, 271)
+V available, perform SVD dim reduction
+dense matrix shape(29683, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(62261, 271)
+V available, perform SVD dim reduction
+dense matrix shape(62261, 100)
+───────────────────────────────────────── Selected tasks  ──────────────────────────────────────────
+Retrieval
+    - SCIDOCS, s2p
+
+
+AbsTaskRetrieval.evaluate called
+get_vocab called!
+input: <class 'list'> of length 26657
+vocab settings: 
+ngram_range: (2, 2), 
+max_df: 0.1, 
+min_df: 0.02, 
+max_features: None
+vocab of lenght 310 starting with ['the design', 'design of', 'algorithm is', 'is proposed', 'is based', 'and is', 'not only', 'but also', 'where the', 'the best']
+tfidf matrix shape(26657, 310)
+V not provided, fit SVD to get V
+tfidf matrix shape(1000, 310)
+V available, perform SVD dim reduction
+dense matrix shape(1000, 100)
+tfidf matrix shape(25657, 310)
+V available, perform SVD dim reduction
+dense matrix shape(25657, 100)
+───────────────────────────────────────── Selected tasks  ──────────────────────────────────────────
+Reranking
+    - SciDocsRR, s2s
+
+
+───────────────────────────────────────── Selected tasks  ──────────────────────────────────────────
+Clustering
+    - StackExchangeClusteringP2P, p2p
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['sentences', 'labels'],
+        num_rows: 10
+    })
+})
+_evaluate_subset in AbsTaskClustering called
+get_vocab called!
+input: <class 'list'> of length 75000
+vocab settings: 
+ngram_range: (2, 2), 
+max_df: 0.1, 
+min_df: 0.02, 
+max_features: None
+vocab of lenght 370 starting with ['does anyone', 'them to', 'but not', 've been', 'to create', 'to get', 'get the', 'used to', 'but the', 'the whole']
+tfidf matrix shape(75000, 370)
+V not provided, fit SVD to get V
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 370)
+V available, perform SVD dim reduction
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 370)
+V available, perform SVD dim reduction
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 370)
+V available, perform SVD dim reduction
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 370)
+V available, perform SVD dim reduction
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 370)
+V available, perform SVD dim reduction
+dense matrix shape(10000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 370)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 370)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 370)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 370)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 370)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 100)
+───────────────────────────────────────── Selected tasks  ──────────────────────────────────────────
+STS
+    - STS15, s2s
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['split', 'sentence1', 'sentence2', 'score'],
+        num_rows: 3000
+    })
+})
+get_vocab called!
+input: <class 'list'> of length 6000
+vocab settings: 
+ngram_range: (2, 2), 
+max_df: 0.1, 
+min_df: 0.02, 
+max_features: None
+vocab of lenght 24 starting with ['is not', 'there is', 'to the', 'and the', 'of the', 'the same', 'the bulb', 'with the', 'on the', 'the battery']
+tfidf matrix shape(6000, 24)
+vocab of length 24 too small to perform svd reduction
+tfidf matrix shape(3000, 24)
+vocab of length 24 too small to perform svd reduction
+tfidf matrix shape(3000, 24)
+vocab of length 24 too small to perform svd reduction
+───────────────────────────────────────── Selected tasks  ──────────────────────────────────────────
+STS
+    - STS16, s2s
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['split', 'sentence1', 'sentence2', 'score'],
+        num_rows: 1186
+    })
+})
+get_vocab called!
+input: <class 'list'> of length 2372
+vocab settings: 
+ngram_range: (2, 2), 
+max_df: 0.1, 
+min_df: 0.02, 
+max_features: None
+vocab of lenght 17 starting with ['in the', 'on the', 'what you', 'to do', 'depends on', 'is the', 'this is', 'the best', 'it is', 'how do']
+tfidf matrix shape(2372, 17)
+vocab of length 17 too small to perform svd reduction
+tfidf matrix shape(1186, 17)
+vocab of length 17 too small to perform svd reduction
+tfidf matrix shape(1186, 17)
+vocab of length 17 too small to perform svd reduction
+───────────────────────────────────────── Selected tasks  ──────────────────────────────────────────
+STS
+    - STSBenchmark, s2s
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    train: Dataset({
+        features: ['split', 'genre', 'dataset', 'year', 'sid', 'score', 'sentence1', 'sentence2'],
+        num_rows: 5749
+    })
+    validation: Dataset({
+        features: ['split', 'genre', 'dataset', 'year', 'sid', 'score', 'sentence1', 'sentence2'],
+        num_rows: 1500
+    })
+    test: Dataset({
+        features: ['split', 'genre', 'dataset', 'year', 'sid', 'score', 'sentence1', 'sentence2'],
+        num_rows: 1379
+    })
+})
+get_vocab called!
+input: <class 'list'> of length 2758
+vocab settings: 
+ngram_range: (2, 2), 
+max_df: 0.1, 
+min_df: 0.02, 
+max_features: None
+vocab of lenght 8 starting with ['on the', 'woman is', 'man is', 'is playing', 'in the', 'of the', 'and white', 'what you']
+tfidf matrix shape(2758, 8)
+vocab of length 8 too small to perform svd reduction
+tfidf matrix shape(1379, 8)
+vocab of length 8 too small to perform svd reduction
+tfidf matrix shape(1379, 8)
+vocab of length 8 too small to perform svd reduction
+───────────────────────────────────────── Selected tasks  ──────────────────────────────────────────
+Retrieval
+    - ArguAna, s2p
+
+
+AbsTaskRetrieval.evaluate called
+get_vocab called!
+input: <class 'list'> of length 10080
+vocab settings: 
+ngram_range: (2, 2), 
+max_df: 0.1, 
+min_df: 0.05, 
+max_features: None
+vocab of lenght 61 starting with ['have to', 'rather than', 'which is', 'the case', 'may be', 'is to', 'that are', 'is an', 'to do', 'one of']
+tfidf matrix shape(10080, 61)
+vocab of length 61 too small to perform svd reduction
+tfidf matrix shape(1406, 61)
+vocab of length 61 too small to perform svd reduction
+tfidf matrix shape(8674, 61)
+vocab of length 61 too small to perform svd reduction
+───────────────────────────────────────── Selected tasks  ──────────────────────────────────────────
+Clustering
+    - ArxivClusteringP2P, p2p
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['sentences', 'labels'],
+        num_rows: 31
+    })
+})
+_evaluate_subset in AbsTaskClustering called
+get_vocab called!
+input: <class 'list'> of length 732723
+vocab settings: 
+ngram_range: (2, 2), 
+max_df: 0.1, 
+min_df: 0.05, 
+max_features: None
+vocab of lenght 37 starting with ['of an', 'we consider', 'due to', 'have been', 'the first', 'we find', 'find that', 'number of', 'here we', 'between the']
+tfidf matrix shape(732723, 37)
+vocab of length 37 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 37)
+vocab of length 37 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 37)
+vocab of length 37 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 37)
+vocab of length 37 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 37)
+vocab of length 37 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 37)
+vocab of length 37 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 37)
+vocab of length 37 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 37)
+vocab of length 37 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 37)
+vocab of length 37 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 37)
+vocab of length 37 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 37)
+vocab of length 37 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 37)
+vocab of length 37 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 37)
+vocab of length 37 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 37)
+vocab of length 37 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 37)
+vocab of length 37 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 37)
+vocab of length 37 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 37)
+vocab of length 37 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 37)
+vocab of length 37 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 37)
+vocab of length 37 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 37)
+vocab of length 37 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 37)
+vocab of length 37 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 37)
+vocab of length 37 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(3750, 37)
+vocab of length 37 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 37)
+vocab of length 37 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(22438, 37)
+vocab of length 37 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(22608, 37)
+vocab of length 37 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(8927, 37)
+vocab of length 37 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 37)
+vocab of length 37 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 37)
+vocab of length 37 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 37)
+vocab of length 37 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 37)
+vocab of length 37 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(25000, 37)
+vocab of length 37 too small to perform svd reduction
+───────────────────────────────────────── Selected tasks  ──────────────────────────────────────────
+Clustering
+    - BiorxivClusteringP2P, p2p
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['sentences', 'labels'],
+        num_rows: 10
+    })
+})
+_evaluate_subset in AbsTaskClustering called
+get_vocab called!
+input: <class 'list'> of length 75000
+vocab settings: 
+ngram_range: (2, 2), 
+max_df: 0.1, 
+min_df: 0.05, 
+max_features: None
+vocab of lenght 78 starting with ['number of', 'of this', 'showed that', 'but not', 'role of', 'range of', 'single cell', 'expression of', 'that are', 'we propose']
+tfidf matrix shape(75000, 78)
+vocab of length 78 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 78)
+vocab of length 78 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 78)
+vocab of length 78 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 78)
+vocab of length 78 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 78)
+vocab of length 78 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 78)
+vocab of length 78 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 78)
+vocab of length 78 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 78)
+vocab of length 78 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 78)
+vocab of length 78 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 78)
+vocab of length 78 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 78)
+vocab of length 78 too small to perform svd reduction
+───────────────────────────────────────── Selected tasks  ──────────────────────────────────────────
+Clustering
+    - MedrxivClusteringP2P, p2p
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['sentences', 'labels'],
+        num_rows: 10
+    })
+})
+_evaluate_subset in AbsTaskClustering called
+get_vocab called!
+input: <class 'list'> of length 37500
+vocab settings: 
+ngram_range: (2, 2), 
+max_df: 0.1, 
+min_df: 0.05, 
+max_features: None
+vocab of lenght 102 starting with ['more than', 'spread of', 'and to', 'the pandemic', 'of patients', 'the effect', 'effect of', 'to investigate', 'to assess', 'assess the']
+tfidf matrix shape(37500, 102)
+V not provided, fit SVD to get V
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 102)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 102)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 102)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 102)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 102)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(2500, 102)
+V available, perform SVD dim reduction
+dense matrix shape(2500, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(2500, 102)
+V available, perform SVD dim reduction
+dense matrix shape(2500, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(2500, 102)
+V available, perform SVD dim reduction
+dense matrix shape(2500, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(2500, 102)
+V available, perform SVD dim reduction
+dense matrix shape(2500, 100)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(2500, 102)
+V available, perform SVD dim reduction
+dense matrix shape(2500, 100)
+───────────────────────────────────────── Selected tasks  ──────────────────────────────────────────
+Reranking
+    - MindSmallReranking, s2s
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    train: Dataset({
+        features: ['id', 'query', 'positive', 'negative'],
+        num_rows: 153727
+    })
+    test: Dataset({
+        features: ['id', 'query', 'positive', 'negative'],
+        num_rows: 70938
+    })
+})
+evaluate subset called in abstaskreranking
+get_vocab called!
+input: <class 'list'> of length 5020605
+vocab settings: 
+ngram_range: (2, 2), 
+max_df: 0.1, 
+min_df: 0.05, 
+max_features: None

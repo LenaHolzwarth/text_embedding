@@ -31,10 +31,10 @@ tasks = mteb.get_tasks(tasks=selection)
 model = src.tfidf_svd_log.Tfidf()
 
 # select vocab hyperparameters
-ngram_range_ = [(1,2), (2,2)]    # length of sequences to tokenize
-max_df_ = [x/10 for x in range(2,10,2)] # ignore terms that have a document frequency higher than this (uninformative b.c. too frequent)
+ngram_range_ = [(1,1), (1,2), (2,2)]    # length of sequences to tokenize
+max_df_ = [0.05, 0.02, 0.01] # ignore terms that have a document frequency higher than this (uninformative b.c. too frequent)
                                         # -> the lower it is set, the more words are ignored
-min_df_ = [0.01, 0.02, 0.05]                           # ignore terms that have a document frequency lower than this (uninformative b.c. too infrequent)
+min_df_ = [1, 0.01, 0.02, 0.05, 0.1]                           # ignore terms that have a document frequency lower than this (uninformative b.c. too infrequent)
                                         # -> the higher it is set, the more words are ignored
 max_features_ = [None]
 
@@ -42,11 +42,13 @@ max_features_ = [None]
 for ngram_range in ngram_range_:
     for max_df in max_df_:
         for min_df in min_df_:
+            # skip iteration if mindf >= maxdf
+            if min_df >= max_df and not min_df==1:
+                continue
             for max_features in max_features_:
-            
 
                 # directory for sparse results
-                results_folder = f"/gpfs01/berens/user/lholzwarth/text_embedding/MTEB/vocab_test_results/ngram_{ngram_range[0]}-{ngram_range[1]}_maxdf_{int(max_df)}-{int(round(max_df%1, 2)*10)}_mindf_{int(min_df)}-{int(round(min_df%1, 2)*10)}{int(round(min_df%1, 2)*100)}_maxfeatures_{max_features}"
+                results_folder = f"/gpfs01/berens/user/lholzwarth/text_embedding/MTEB/vocab_test_results/ngram_{ngram_range[0]}-{ngram_range[1]}_maxdf_{int(max_df)}-{int(round(max_df%1, 2)*10)}{int(round(max_df%1, 2)*100)}_mindf_{int(min_df)}-{int(round(min_df%1, 2)*10)}{int(round(min_df%1, 2)*100)}_maxfeatures_{max_features}"
  
                 # run each task consecutively
                 for task in tasks:
