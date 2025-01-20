@@ -46,13 +46,15 @@ results_folder = "/gpfs01/berens/user/lholzwarth/text_embedding/MTEB/sparse_resu
 #"tfidf_svd50_log": src.tfidf_svd50_log.Tfidf(),
 #"tfidf_svd200_log": src.tfidf_svd200_log.Tfidf(),
 #"tfidf_svd300_log": src.tfidf_svd300_log.Tfidf(),
+#"tfidf_svd500_log": src.tfidf_svd500_log.Tfidf(),
+#"tfidf_svd_log_piecewise": src.tfidf_svd_log_piecewise.Tfidf(),
+#"tfidf_svd_log_novocab": src.tfidf_svd_log_novocab.Tfidf(),
+#"tfidf_svd_log_old": src.tfidf_svd_log_old.Tfidf(),
+#"tfidf_rnd100_log": src.tfidf_rnd100_log.Tfidf(),
+#"tfidf_rnd500_log": src.tfidf_rnd500_log.Tfidf(),
+#"tfidf_rnd768_log": src.tfidf_rnd768_log.Tfidf()
 model_dict = {
-"tfidf_svd500_log": src.tfidf_svd500_log.Tfidf(),
-"tfidf_svd_log_piecewise": src.tfidf_svd_log_piecewise.Tfidf(),
-"tfidf_svd_log_novocab": src.tfidf_svd_log_novocab.Tfidf(),
-"tfidf_svd_log_old": src.tfidf_svd_log_old.Tfidf(),
-"tfidf_rnd100_log": src.tfidf_rnd100_log.Tfidf(),
-"tfidf_rnd768_log": src.tfidf_rnd768_log.Tfidf()
+"tfidf_svd768_log": src.tfidf_svd768_log.Tfidf()
 }
  
 
