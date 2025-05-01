@@ -1,0 +1,266 @@
+
+model name (one of 'tfidf', 'glove', 'komninos', 'sbert' or full SentenceTransformer names)
+task type (one of 'b' for benchmark, 't' for task suite or 's' for single task)───────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────
+Clustering
+    - RedditClusteringP2P, p2p
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['sentences', 'labels'],
+        num_rows: 10
+    })
+})
+_evaluate_subset in AbsTaskClustering called
+get_vocab called!
+input: <class 'list'> of length 459399
+vocab of lenght 307965 starting with ['00000000004a0048', '00000000004c004a', '000000000143aaa0', '00000000030a8678', '00000000030a8730', '00000000030a8c40', '00000000030a8da8', '000000002usd', '00000001s', '00000099btc']
+tfidf matrix shape(459399, 307965)
+V not provided, fit SVD to get V
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(15592, 307965)
+V available, perform SVD dim reduction
+dense matrix shape(15592, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(79172, 307965)
+V available, perform SVD dim reduction
+dense matrix shape(79172, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(1942, 307965)
+V available, perform SVD dim reduction
+dense matrix shape(1942, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(13224, 307965)
+V available, perform SVD dim reduction
+dense matrix shape(13224, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(92303, 307965)
+V available, perform SVD dim reduction
+dense matrix shape(92303, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(28607, 307965)
+V available, perform SVD dim reduction
+dense matrix shape(28607, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(69146, 307965)
+V available, perform SVD dim reduction
+dense matrix shape(69146, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(67469, 307965)
+V available, perform SVD dim reduction
+dense matrix shape(67469, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(29683, 307965)
+V available, perform SVD dim reduction
+dense matrix shape(29683, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(62261, 307965)
+V available, perform SVD dim reduction
+dense matrix shape(62261, 500)
+───────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────
+Retrieval
+    - SCIDOCS, s2p
+
+
+AbsTaskRetrieval.evaluate called
+get_vocab called!
+input: <class 'list'> of length 26657
+vocab of lenght 75230 starting with ['000buildings', '000m', '000mhz', '000sf', '000users', '000x', '0016λ', '0021mum2', '003deg', '003degc']
+tfidf matrix shape(26657, 75230)
+V not provided, fit SVD to get V
+tfidf matrix shape(1000, 75230)
+V available, perform SVD dim reduction
+dense matrix shape(1000, 500)
+tfidf matrix shape(25657, 75230)
+V available, perform SVD dim reduction
+dense matrix shape(25657, 500)
+───────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────
+Reranking
+    - SciDocsRR, s2s
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    validation: Dataset({
+        features: ['query', 'positive', 'negative'],
+        num_rows: 3981
+    })
+    test: Dataset({
+        features: ['query', 'positive', 'negative'],
+        num_rows: 3978
+    })
+})
+evaluate subset called in abstaskreranking
+get_vocab called!
+input: <class 'list'> of length 396561
+vocab of lenght 39564 starting with ['04lx', '059mm2', '0mw', '0v', '100fps', '100fs', '100g', '100gb', '100khz', '100mhz']
+tfidf matrix shape(396561, 39564)
+V not provided, fit SVD to get V
+tfidf matrix shape(3978, 39564)
+V available, perform SVD dim reduction
+dense matrix shape(3978, 500)
+tfidf matrix shape(85153, 39564)
+V available, perform SVD dim reduction
+dense matrix shape(85153, 500)
+───────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────
+Clustering
+    - StackExchangeClusteringP2P, p2p
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['sentences', 'labels'],
+        num_rows: 10
+    })
+})
+_evaluate_subset in AbsTaskClustering called
+get_vocab called!
+input: <class 'list'> of length 75000
+vocab of lenght 116103 starting with ['0000000000001f', '0000000000f', '000000001e0f6fc0', '000000001e0f6fc8', '000000001f', '0000000025eb8d90', '00000000f', '0000000f', '0000000x', '000000c7']
+tfidf matrix shape(75000, 116103)
+V not provided, fit SVD to get V
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 116103)
+V available, perform SVD dim reduction
+dense matrix shape(10000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 116103)
+V available, perform SVD dim reduction
+dense matrix shape(10000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 116103)
+V available, perform SVD dim reduction
+dense matrix shape(10000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 116103)
+V available, perform SVD dim reduction
+dense matrix shape(10000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 116103)
+V available, perform SVD dim reduction
+dense matrix shape(10000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 116103)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 116103)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 116103)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 116103)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 500)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 116103)
+V available, perform SVD dim reduction
+dense matrix shape(5000, 500)
+───────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────
+STS
+    - STS15, s2s
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['split', 'sentence1', 'sentence2', 'score'],
+        num_rows: 3000
+    })
+})
+get_vocab called!
+input: <class 'list'> of length 6000
+vocab of lenght 6926 starting with ['00pm', '10th', '13pc', '13th', '16k', '16th', '1950s', '1960s', '1970s', '1bn']
+tfidf matrix shape(6000, 6926)
+V not provided, fit SVD to get V
+tfidf matrix shape(3000, 6926)
+V available, perform SVD dim reduction
+dense matrix shape(3000, 500)
+tfidf matrix shape(3000, 6926)
+V available, perform SVD dim reduction
+dense matrix shape(3000, 500)
+───────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────
+STS
+    - STS16, s2s
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['split', 'sentence1', 'sentence2', 'score'],
+        num_rows: 1186
+    })
+})
+get_vocab called!
+input: <class 'list'> of length 2372
+vocab of lenght 3826 starting with ['14th', '16h', '1950s', '1960s', '19h', '1mdb', '34m', '3g', '3rd', '401k']
+tfidf matrix shape(2372, 3826)
+V not provided, fit SVD to get V
+tfidf matrix shape(1186, 3826)
+V available, perform SVD dim reduction
+dense matrix shape(1186, 500)
+tfidf matrix shape(1186, 3826)
+V available, perform SVD dim reduction
+dense matrix shape(1186, 500)
+───────────────────────────────────────────────────────────── Selected tasks  ──────────────────────────────────────────────────────────────
+STS
+    - STSBenchmark, s2s
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    train: Dataset({
+        features: ['split', 'genre', 'dataset', 'year', 'sid', 'score', 'sentence1', 'sentence2'],
+        num_rows: 5749
+    })
+    validation: Dataset({
+        features: ['split', 'genre', 'dataset', 'year', 'sid', 'score', 'sentence1', 'sentence2'],
+        num_rows: 1500
+    })
+    test: Dataset({
+        features: ['split', 'genre', 'dataset', 'year', 'sid', 'score', 'sentence1', 'sentence2'],
+        num_rows: 1379
+    })
+})
+get_vocab called!
+input: <class 'list'> of length 2758
+vocab of lenght 4499 starting with ['100th', '2pc', '356m', '3rd', '48km', '4m', '55b', '55bn', '600m', 'a920']
+tfidf matrix shape(2758, 4499)
+V not provided, fit SVD to get V
+tfidf matrix shape(1379, 4499)
+V available, perform SVD dim reduction
+dense matrix shape(1379, 500)
+tfidf matrix shape(1379, 4499)
+V available, perform SVD dim reduction
+dense matrix shape(1379, 500)

@@ -1,0 +1,1 @@
+{"name": "sentence-transformers/all-mpnet-base-v2", "revision": "f1b1b820e405bb8644f5e8d9a3b98f9c9e0a3c58", "release_date": null, "languages": [], "n_parameters": null, "memory_usage": null, "max_tokens": null, "embed_dim": null, "license": null, "open_source": null, "similarity_fn_name": null, "framework": ["Sentence Transformers"], "loader": null}

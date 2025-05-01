@@ -1,0 +1,167 @@
+
+model name (one of 'tfidf', 'glove', 'komninos', 'sbert' or full SentenceTransformer names)
+task type (one of 'b' for benchmark, 't' for task suite or 's' for single task)─────────────────────────────────────────────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────────────────────────────────────────────
+Retrieval
+    - ArguAna, s2p
+
+
+─────────────────────────────────────────────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────────────────────────────────────────────
+Clustering
+    - ArxivClusteringP2P, p2p
+
+
+─────────────────────────────────────────────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────────────────────────────────────────────
+Clustering
+    - BiorxivClusteringP2P, p2p
+
+
+─────────────────────────────────────────────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────────────────────────────────────────────
+Clustering
+    - MedrxivClusteringP2P, p2p
+
+
+─────────────────────────────────────────────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────────────────────────────────────────────
+Reranking
+    - MindSmallReranking, s2s
+
+
+─────────────────────────────────────────────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────────────────────────────────────────────
+Clustering
+    - RedditClusteringP2P, p2p
+
+
+─────────────────────────────────────────────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────────────────────────────────────────────
+Retrieval
+    - SCIDOCS, s2p
+
+
+─────────────────────────────────────────────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────────────────────────────────────────────
+Reranking
+    - SciDocsRR, s2s
+
+
+─────────────────────────────────────────────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────────────────────────────────────────────
+Clustering
+    - StackExchangeClusteringP2P, p2p
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['sentences', 'labels'],
+        num_rows: 10
+    })
+})
+_evaluate_subset in AbsTaskClustering called
+get_vocab called!
+input: <class 'list'> of length 75000
+vocab of lenght 116103 starting with ['othercolor', 'imaginery', 'ec', 'weaponsocket', 'gvrrecticlepointer', 'applets', 'insidesize', 'windmill', 'staticpixelshader', 'earthgeometry']
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 116103)
+dense matrix shape(10000, 116103)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 116103)
+dense matrix shape(10000, 116103)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 116103)
+dense matrix shape(10000, 116103)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 116103)
+dense matrix shape(10000, 116103)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 116103)
+dense matrix shape(10000, 116103)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 116103)
+dense matrix shape(5000, 116103)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 116103)
+dense matrix shape(5000, 116103)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 116103)
+dense matrix shape(5000, 116103)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 116103)
+dense matrix shape(5000, 116103)
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 116103)
+dense matrix shape(5000, 116103)
+─────────────────────────────────────────────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────────────────────────────────────────────
+STS
+    - STS15, s2s
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['split', 'sentence1', 'sentence2', 'score'],
+        num_rows: 3000
+    })
+})
+get_vocab called!
+input: <class 'list'> of length 6000
+vocab of lenght 6926 starting with ['sinhala', 'honest', 'valid', 'kenyan', 'sri', 'job', 'million', 'to', 'packaging', 'fighting']
+tfidf matrix shape(3000, 6926)
+dense matrix shape(3000, 6926)
+tfidf matrix shape(3000, 6926)
+dense matrix shape(3000, 6926)
+─────────────────────────────────────────────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────────────────────────────────────────────
+STS
+    - STS16, s2s
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['split', 'sentence1', 'sentence2', 'score'],
+        num_rows: 1186
+    })
+})
+get_vocab called!
+input: <class 'list'> of length 2372
+vocab of lenght 3826 starting with ['abuse', 'dozen', 'insomnia', 'valid', 'apparatus', 'bloquèrent', 'shame', 'job', 'million', 'to']
+tfidf matrix shape(1186, 3826)
+dense matrix shape(1186, 3826)
+tfidf matrix shape(1186, 3826)
+dense matrix shape(1186, 3826)
+─────────────────────────────────────────────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────────────────────────────────────────────
+STS
+    - STSBenchmark, s2s
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    train: Dataset({
+        features: ['split', 'genre', 'dataset', 'year', 'sid', 'score', 'sentence1', 'sentence2'],
+        num_rows: 5749
+    })
+    validation: Dataset({
+        features: ['split', 'genre', 'dataset', 'year', 'sid', 'score', 'sentence1', 'sentence2'],
+        num_rows: 1500
+    })
+    test: Dataset({
+        features: ['split', 'genre', 'dataset', 'year', 'sid', 'score', 'sentence1', 'sentence2'],
+        num_rows: 1379
+    })
+})
+get_vocab called!
+input: <class 'list'> of length 2758
+vocab of lenght 4499 starting with ['abuse', 'dozen', 'valid', 'shopping', 'portugal', 'sri', 'declining', 'job', 'million', 'to']
+tfidf matrix shape(1379, 4499)
+dense matrix shape(1379, 4499)
+tfidf matrix shape(1379, 4499)
+dense matrix shape(1379, 4499)

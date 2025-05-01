@@ -1,0 +1,447 @@
+──────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────
+Retrieval
+    - ArguAna, s2p
+
+
+──────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────
+Clustering
+    - ArxivClusteringP2P, p2p
+
+
+──────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────
+Clustering
+    - BiorxivClusteringP2P, p2p
+
+
+──────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────
+Clustering
+    - MedrxivClusteringP2P, p2p
+
+
+──────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────
+Reranking
+    - MindSmallReranking, s2s
+
+
+──────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────
+Clustering
+    - RedditClusteringP2P, p2p
+
+
+──────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────
+Retrieval
+    - SCIDOCS, s2p
+
+
+──────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────
+Reranking
+    - SciDocsRR, s2s
+
+
+──────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────
+Clustering
+    - StackExchangeClusteringP2P, p2p
+
+
+──────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────
+STS
+    - STS15, s2s
+
+
+──────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────
+STS
+    - STS16, s2s
+
+
+──────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────
+STS
+    - STSBenchmark, s2s
+
+
+──────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────
+Retrieval
+    - ArguAna, s2p
+
+
+──────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────
+Clustering
+    - ArxivClusteringP2P, p2p
+
+
+──────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────
+Clustering
+    - BiorxivClusteringP2P, p2p
+
+
+──────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────
+Clustering
+    - MedrxivClusteringP2P, p2p
+
+
+──────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────
+Reranking
+    - MindSmallReranking, s2s
+
+
+──────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────
+Clustering
+    - RedditClusteringP2P, p2p
+
+
+──────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────
+Retrieval
+    - SCIDOCS, s2p
+
+
+──────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────
+Reranking
+    - SciDocsRR, s2s
+
+
+──────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────
+Clustering
+    - StackExchangeClusteringP2P, p2p
+
+
+──────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────
+STS
+    - STS15, s2s
+
+
+──────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────
+STS
+    - STS16, s2s
+
+
+──────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────
+STS
+    - STSBenchmark, s2s
+
+
+──────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────
+Retrieval
+    - ArguAna, s2p
+
+
+──────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────
+Clustering
+    - ArxivClusteringP2P, p2p
+
+
+──────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────
+Clustering
+    - BiorxivClusteringP2P, p2p
+
+
+──────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────
+Clustering
+    - MedrxivClusteringP2P, p2p
+
+
+──────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────
+Reranking
+    - MindSmallReranking, s2s
+
+
+──────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────
+Clustering
+    - RedditClusteringP2P, p2p
+
+
+──────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────
+Retrieval
+    - SCIDOCS, s2p
+
+
+──────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────
+Reranking
+    - SciDocsRR, s2s
+
+
+──────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────
+Clustering
+    - StackExchangeClusteringP2P, p2p
+
+
+──────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────
+STS
+    - STS15, s2s
+
+
+──────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────
+STS
+    - STS16, s2s
+
+
+──────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────
+STS
+    - STSBenchmark, s2s
+
+
+──────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────
+Retrieval
+    - ArguAna, s2p
+
+
+──────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────
+Clustering
+    - ArxivClusteringP2P, p2p
+
+
+──────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────
+Clustering
+    - BiorxivClusteringP2P, p2p
+
+
+──────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────
+Clustering
+    - MedrxivClusteringP2P, p2p
+
+
+──────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────
+Reranking
+    - MindSmallReranking, s2s
+
+
+──────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────
+Clustering
+    - RedditClusteringP2P, p2p
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['sentences', 'labels'],
+        num_rows: 10
+    })
+})
+_evaluate_subset in AbsTaskClustering called
+get_vocab called!
+input: <class 'list'> of length 459399
+vocab settings: 
+ngram_range: (2, 2), 
+max_df: 0.1, 
+min_df: 0.05, 
+max_features: None
+vocab of lenght 45 starting with ['and have', 'you re', 'of my', 'with the', 'to go', 'with my', 've been', 'at the', 'is the', 'don know']
+tfidf matrix shape(459399, 45)
+vocab of length 45 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(15592, 45)
+vocab of length 45 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(79172, 45)
+vocab of length 45 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(1942, 45)
+vocab of length 45 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(13224, 45)
+vocab of length 45 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(92303, 45)
+vocab of length 45 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(28607, 45)
+vocab of length 45 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(69146, 45)
+vocab of length 45 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(67469, 45)
+vocab of length 45 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(29683, 45)
+vocab of length 45 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(62261, 45)
+vocab of length 45 too small to perform svd reduction
+──────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────
+Retrieval
+    - SCIDOCS, s2p
+
+
+AbsTaskRetrieval.evaluate called
+get_vocab called!
+input: <class 'list'> of length 26657
+vocab settings: 
+ngram_range: (2, 2), 
+max_df: 0.1, 
+min_df: 0.05, 
+max_features: None
+vocab of lenght 48 starting with ['the performance', 'performance of', 'compared to', 'one of', 'is to', 'at the', 'used to', 'is the', 'of this', 'have been']
+tfidf matrix shape(26657, 48)
+vocab of length 48 too small to perform svd reduction
+tfidf matrix shape(1000, 48)
+vocab of length 48 too small to perform svd reduction
+tfidf matrix shape(25657, 48)
+vocab of length 48 too small to perform svd reduction
+──────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────
+Reranking
+    - SciDocsRR, s2s
+
+
+──────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────
+Clustering
+    - StackExchangeClusteringP2P, p2p
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['sentences', 'labels'],
+        num_rows: 10
+    })
+})
+_evaluate_subset in AbsTaskClustering called
+get_vocab called!
+input: <class 'list'> of length 75000
+vocab settings: 
+ngram_range: (2, 2), 
+max_df: 0.1, 
+min_df: 0.05, 
+max_features: None
+vocab of lenght 72 starting with ['to create', 'to get', 'get the', 'but the', 'like this', 'if the', 'can be', 'have to', 'does not', 'it to']
+tfidf matrix shape(75000, 72)
+vocab of length 72 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 72)
+vocab of length 72 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 72)
+vocab of length 72 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 72)
+vocab of length 72 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 72)
+vocab of length 72 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(10000, 72)
+vocab of length 72 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 72)
+vocab of length 72 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 72)
+vocab of length 72 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 72)
+vocab of length 72 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 72)
+vocab of length 72 too small to perform svd reduction
+cluster set of type <class 'dict'>
+ClusteringEvaluator called
+tfidf matrix shape(5000, 72)
+vocab of length 72 too small to perform svd reduction
+──────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────
+STS
+    - STS15, s2s
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['split', 'sentence1', 'sentence2', 'score'],
+        num_rows: 3000
+    })
+})
+get_vocab called!
+input: <class 'list'> of length 6000
+vocab settings: 
+ngram_range: (2, 2), 
+max_df: 0.1, 
+min_df: 0.05, 
+max_features: None
+vocab of lenght 2 starting with ['the battery', 'closed path']
+tfidf matrix shape(6000, 2)
+vocab of length 2 too small to perform svd reduction
+tfidf matrix shape(3000, 2)
+vocab of length 2 too small to perform svd reduction
+tfidf matrix shape(3000, 2)
+vocab of length 2 too small to perform svd reduction
+──────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────
+STS
+    - STS16, s2s
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    test: Dataset({
+        features: ['split', 'sentence1', 'sentence2', 'score'],
+        num_rows: 1186
+    })
+})
+get_vocab called!
+input: <class 'list'> of length 2372
+vocab settings: 
+ngram_range: (2, 2), 
+max_df: 0.1, 
+min_df: 0.05, 
+max_features: None
+vocab of lenght 3 starting with ['in the', 'is the', 'of the']
+tfidf matrix shape(2372, 3)
+vocab of length 3 too small to perform svd reduction
+tfidf matrix shape(1186, 3)
+vocab of length 3 too small to perform svd reduction
+tfidf matrix shape(1186, 3)
+vocab of length 3 too small to perform svd reduction
+──────────────────────────────────────────────────── Selected tasks  ────────────────────────────────────────────────────
+STS
+    - STSBenchmark, s2s
+
+
+AbsTask.load_data called
+AbsTask.evaluate called in AbsTask.py
+DatasetDict({
+    train: Dataset({
+        features: ['split', 'genre', 'dataset', 'year', 'sid', 'score', 'sentence1', 'sentence2'],
+        num_rows: 5749
+    })
+    validation: Dataset({
+        features: ['split', 'genre', 'dataset', 'year', 'sid', 'score', 'sentence1', 'sentence2'],
+        num_rows: 1500
+    })
+    test: Dataset({
+        features: ['split', 'genre', 'dataset', 'year', 'sid', 'score', 'sentence1', 'sentence2'],
+        num_rows: 1379
+    })
+})
+get_vocab called!
+input: <class 'list'> of length 2758
+vocab settings: 
+ngram_range: (2, 2), 
+max_df: 0.1, 
+min_df: 0.05, 
+max_features: None
+vocab of lenght 1 starting with ['man is']
+tfidf matrix shape(2758, 1)
+vocab of length 1 too small to perform svd reduction
+tfidf matrix shape(1379, 1)
+vocab of length 1 too small to perform svd reduction
+tfidf matrix shape(1379, 1)
+vocab of length 1 too small to perform svd reduction
